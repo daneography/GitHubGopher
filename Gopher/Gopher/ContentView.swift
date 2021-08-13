@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            VStack(alignment: .leading) {
+                Text("Hello, this is GitHubGopher")
+                    .font(.title)
+                Text("I talk to GitHub API and show you stuff.")
+                    .font(.subheadline)
+            }
             .padding()
+            
+            Button(action: {
+                print("Search Button Tapped")
+            }) {
+                Text("Search")
+                    .padding(10)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+        }
     }
 }
 
