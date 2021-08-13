@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FD126C624FC0018E2A6 /* GopherApp.swift */; };
+		AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FD326C624FC0018E2A6 /* ContentView.swift */; };
+		AC805FD626C624FD0018E2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC805FD526C624FD0018E2A6 /* Assets.xcassets */; };
+		AC805FD926C624FD0018E2A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC805FD826C624FD0018E2A6 /* Preview Assets.xcassets */; };
+		AC805FE426C624FE0018E2A6 /* GopherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FE326C624FE0018E2A6 /* GopherTests.swift */; };
+		AC805FEF26C624FE0018E2A6 /* GopherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FEE26C624FE0018E2A6 /* GopherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC805FE026C624FE0018E2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC805FC626C624FC0018E2A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC805FCD26C624FC0018E2A6;
+			remoteInfo = Gopher;
+		};
+		AC805FEB26C624FE0018E2A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC805FC626C624FC0018E2A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC805FCD26C624FC0018E2A6;
+			remoteInfo = Gopher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC805FCE26C624FC0018E2A6 /* Gopher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gopher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC805FD126C624FC0018E2A6 /* GopherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherApp.swift; sourceTree = "<group>"; };
+		AC805FD326C624FC0018E2A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC805FD526C624FD0018E2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC805FD826C624FD0018E2A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC805FDA26C624FD0018E2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC805FDF26C624FE0018E2A6 /* GopherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC805FE326C624FE0018E2A6 /* GopherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherTests.swift; sourceTree = "<group>"; };
+		AC805FE526C624FE0018E2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC805FEA26C624FE0018E2A6 /* GopherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GopherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC805FEE26C624FE0018E2A6 /* GopherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherUITests.swift; sourceTree = "<group>"; };
+		AC805FF026C624FE0018E2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC805FCB26C624FC0018E2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FDC26C624FE0018E2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FE726C624FE0018E2A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC805FC526C624FC0018E2A6 = {
+			isa = PBXGroup;
+			children = (
+				AC805FD026C624FC0018E2A6 /* Gopher */,
+				AC805FE226C624FE0018E2A6 /* GopherTests */,
+				AC805FED26C624FE0018E2A6 /* GopherUITests */,
+				AC805FCF26C624FC0018E2A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC805FCF26C624FC0018E2A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FCE26C624FC0018E2A6 /* Gopher.app */,
+				AC805FDF26C624FE0018E2A6 /* GopherTests.xctest */,
+				AC805FEA26C624FE0018E2A6 /* GopherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC805FD026C624FC0018E2A6 /* Gopher */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FD126C624FC0018E2A6 /* GopherApp.swift */,
+				AC805FD326C624FC0018E2A6 /* ContentView.swift */,
+				AC805FD526C624FD0018E2A6 /* Assets.xcassets */,
+				AC805FDA26C624FD0018E2A6 /* Info.plist */,
+				AC805FD726C624FD0018E2A6 /* Preview Content */,
+			);
+			path = Gopher;
+			sourceTree = "<group>";
+		};
+		AC805FD726C624FD0018E2A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FD826C624FD0018E2A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC805FE226C624FE0018E2A6 /* GopherTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FE326C624FE0018E2A6 /* GopherTests.swift */,
+				AC805FE526C624FE0018E2A6 /* Info.plist */,
+			);
+			path = GopherTests;
+			sourceTree = "<group>";
+		};
+		AC805FED26C624FE0018E2A6 /* GopherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FEE26C624FE0018E2A6 /* GopherUITests.swift */,
+				AC805FF026C624FE0018E2A6 /* Info.plist */,
+			);
+			path = GopherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC805FCD26C624FC0018E2A6 /* Gopher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC805FF326C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "Gopher" */;
+			buildPhases = (
+				AC805FCA26C624FC0018E2A6 /* Sources */,
+				AC805FCB26C624FC0018E2A6 /* Frameworks */,
+				AC805FCC26C624FC0018E2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gopher;
+			productName = Gopher;
+			productReference = AC805FCE26C624FC0018E2A6 /* Gopher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC805FDE26C624FE0018E2A6 /* GopherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC805FF626C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "GopherTests" */;
+			buildPhases = (
+				AC805FDB26C624FE0018E2A6 /* Sources */,
+				AC805FDC26C624FE0018E2A6 /* Frameworks */,
+				AC805FDD26C624FE0018E2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC805FE126C624FE0018E2A6 /* PBXTargetDependency */,
+			);
+			name = GopherTests;
+			productName = GopherTests;
+			productReference = AC805FDF26C624FE0018E2A6 /* GopherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC805FE926C624FE0018E2A6 /* GopherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC805FF926C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "GopherUITests" */;
+			buildPhases = (
+				AC805FE626C624FE0018E2A6 /* Sources */,
+				AC805FE726C624FE0018E2A6 /* Frameworks */,
+				AC805FE826C624FE0018E2A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC805FEC26C624FE0018E2A6 /* PBXTargetDependency */,
+			);
+			name = GopherUITests;
+			productName = GopherUITests;
+			productReference = AC805FEA26C624FE0018E2A6 /* GopherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC805FC626C624FC0018E2A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AC805FCD26C624FC0018E2A6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					AC805FDE26C624FE0018E2A6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AC805FCD26C624FC0018E2A6;
+					};
+					AC805FE926C624FE0018E2A6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AC805FCD26C624FC0018E2A6;
+					};
+				};
+			};
+			buildConfigurationList = AC805FC926C624FC0018E2A6 /* Build configuration list for PBXProject "Gopher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC805FC526C624FC0018E2A6;
+			productRefGroup = AC805FCF26C624FC0018E2A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC805FCD26C624FC0018E2A6 /* Gopher */,
+				AC805FDE26C624FE0018E2A6 /* GopherTests */,
+				AC805FE926C624FE0018E2A6 /* GopherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC805FCC26C624FC0018E2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC805FD926C624FD0018E2A6 /* Preview Assets.xcassets in Resources */,
+				AC805FD626C624FD0018E2A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FDD26C624FE0018E2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FE826C624FE0018E2A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC805FCA26C624FC0018E2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */,
+				AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FDB26C624FE0018E2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC805FE426C624FE0018E2A6 /* GopherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC805FE626C624FE0018E2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC805FEF26C624FE0018E2A6 /* GopherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC805FE126C624FE0018E2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC805FCD26C624FC0018E2A6 /* Gopher */;
+			targetProxy = AC805FE026C624FE0018E2A6 /* PBXContainerItemProxy */;
+		};
+		AC805FEC26C624FE0018E2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC805FCD26C624FC0018E2A6 /* Gopher */;
+			targetProxy = AC805FEB26C624FE0018E2A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC805FF126C624FE0018E2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC805FF226C624FE0018E2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC805FF426C624FE0018E2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gopher/Preview Content\"";
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Gopher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.Gopher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC805FF526C624FE0018E2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gopher/Preview Content\"";
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Gopher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.Gopher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC805FF726C624FE0018E2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				INFOPLIST_FILE = GopherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.GopherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gopher.app/Gopher";
+			};
+			name = Debug;
+		};
+		AC805FF826C624FE0018E2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				INFOPLIST_FILE = GopherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.GopherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gopher.app/Gopher";
+			};
+			name = Release;
+		};
+		AC805FFA26C624FE0018E2A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				INFOPLIST_FILE = GopherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.GopherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gopher;
+			};
+			name = Debug;
+		};
+		AC805FFB26C624FE0018E2A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PUVJQL65W9;
+				INFOPLIST_FILE = GopherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.daneography.GopherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gopher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC805FC926C624FC0018E2A6 /* Build configuration list for PBXProject "Gopher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC805FF126C624FE0018E2A6 /* Debug */,
+				AC805FF226C624FE0018E2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC805FF326C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "Gopher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC805FF426C624FE0018E2A6 /* Debug */,
+				AC805FF526C624FE0018E2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC805FF626C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "GopherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC805FF726C624FE0018E2A6 /* Debug */,
+				AC805FF826C624FE0018E2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC805FF926C624FE0018E2A6 /* Build configuration list for PBXNativeTarget "GopherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC805FFA26C624FE0018E2A6 /* Debug */,
+				AC805FFB26C624FE0018E2A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC805FC626C624FC0018E2A6 /* Project object */;
+}
