@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 Text("Hello, this is GitHubGopher")
                     .font(.title)
                 Text("I talk to GitHub API and show you stuff.")
@@ -27,7 +27,7 @@ struct ContentView: View {
             
             
             Button(action: {
-                print(self.$text)
+                print(text) // adding $
             }) {
                 Text("Search")
                     .padding(10)
