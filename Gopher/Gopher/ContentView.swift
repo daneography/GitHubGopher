@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var text: String = ""
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -15,11 +18,16 @@ struct ContentView: View {
                     .font(.title)
                 Text("I talk to GitHub API and show you stuff.")
                     .font(.subheadline)
+                
+                TextField("Type in Repository", text: $text)
+                    .padding(10)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
             }
             .padding()
             
+            
             Button(action: {
-                print("Search Button Tapped")
+                print(self.$text)
             }) {
                 Text("Search")
                     .padding(10)
