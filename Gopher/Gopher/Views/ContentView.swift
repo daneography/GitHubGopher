@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text: String = ""
+    @State private var multiSelection = Set<UUID>()
     
     var body: some View {
         VStack {
@@ -21,13 +22,13 @@ struct ContentView: View {
                 
                 TextField("Type in Repository", text: $text)
                     .padding(10)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 0.5)
+                    .border(Color.black, width: 0.5)
             }
             .padding()
             
             
             Button(action: {
-                print(text) // adding $
+                print(text)
             }) {
                 Text("Search")
                     .padding(10)
@@ -35,7 +36,9 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            
         }
+        
     }
 }
 
@@ -44,3 +47,18 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Ocean: Identifiable{
+    let name: String
+    let id = UUID()
+}
+
+private var oceans = [
+    Ocean(name: "Pacific"),
+    Ocean(name: "Atlantic"),
+    Ocean(name: "Indian"),
+    Ocean(name: "Southern"),
+    Ocean(name: "Arctic")
+]
+
+

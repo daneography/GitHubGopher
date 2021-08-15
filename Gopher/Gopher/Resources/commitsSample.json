@@ -1,0 +1,2027 @@
+[
+  {
+    "sha": "812227fa2da5bedb044011bf37fc98a689c529a6",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ODEyMjI3ZmEyZGE1YmVkYjA0NDAxMWJmMzdmYzk4YTY4OWM1MjlhNg==",
+    "commit": {
+      "author": {
+        "name": "Robert Widmann",
+        "email": "devteam.codafi@gmail.com",
+        "date": "2021-08-15T02:56:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-15T02:56:37Z"
+      },
+      "message": "Merge pull request #38764 from egorzhdan/clangimporter-cleanup\n\nClangImporter: NFC: simplify `importFullName` calls",
+      "tree": {
+        "sha": "956261838f829dfeea272de1d1b0088374159440",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/956261838f829dfeea272de1d1b0088374159440"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/812227fa2da5bedb044011bf37fc98a689c529a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhGIJlCRBK7hj4Ov3rIwAAM2wIAAqma+8FthPjGYznvLpmM2fj\ny5yJn+HGTFwzpYxb9SzyuPZUuAnt/O49EfnyIs66Kcw6QBVlXcFBWdHi603acd5C\nFc9eot78hWLM/7kOXKnxl1pjWAOF9diM6zMplhZXOS6vFWatUs38AXAptfDMrjOo\nc8+YfqdYG4CcWK9iJdyP19x9Nu25/M5pvZoMlYIbpKK83G5+fwEElmDPA/TrFCJF\nd6CbZ674QL7hW7JgdzyQARHkBQ3tCSSnC5JNYbo6kyYiys0pcsq945sHUX3/asei\nAaKtn4JP3BFH804+tujQDO8Y+p3cTmQ8rXHaqUhLcd4nwJNm5PWiKQDiPeyWhDM=\n=6VCS\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 956261838f829dfeea272de1d1b0088374159440\nparent 392ba002c88346bc8d5cf8e19cb233d17794e844\nparent 4a414052c9ef0e24e8608e3eddc31c8a0d0e4baf\nauthor Robert Widmann <devteam.codafi@gmail.com> 1628996197 -0700\ncommitter GitHub <noreply@github.com> 1628996197 -0700\n\nMerge pull request #38764 from egorzhdan/clangimporter-cleanup\n\nClangImporter: NFC: simplify `importFullName` calls"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/812227fa2da5bedb044011bf37fc98a689c529a6",
+    "html_url": "https://github.com/apple/swift/commit/812227fa2da5bedb044011bf37fc98a689c529a6",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/812227fa2da5bedb044011bf37fc98a689c529a6/comments",
+    "author": {
+      "login": "CodaFi",
+      "id": 1896383,
+      "node_id": "MDQ6VXNlcjE4OTYzODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1896383?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/CodaFi",
+      "html_url": "https://github.com/CodaFi",
+      "followers_url": "https://api.github.com/users/CodaFi/followers",
+      "following_url": "https://api.github.com/users/CodaFi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/CodaFi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/CodaFi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/CodaFi/subscriptions",
+      "organizations_url": "https://api.github.com/users/CodaFi/orgs",
+      "repos_url": "https://api.github.com/users/CodaFi/repos",
+      "events_url": "https://api.github.com/users/CodaFi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/CodaFi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "392ba002c88346bc8d5cf8e19cb233d17794e844",
+        "url": "https://api.github.com/repos/apple/swift/commits/392ba002c88346bc8d5cf8e19cb233d17794e844",
+        "html_url": "https://github.com/apple/swift/commit/392ba002c88346bc8d5cf8e19cb233d17794e844"
+      },
+      {
+        "sha": "4a414052c9ef0e24e8608e3eddc31c8a0d0e4baf",
+        "url": "https://api.github.com/repos/apple/swift/commits/4a414052c9ef0e24e8608e3eddc31c8a0d0e4baf",
+        "html_url": "https://github.com/apple/swift/commit/4a414052c9ef0e24e8608e3eddc31c8a0d0e4baf"
+      }
+    ]
+  },
+  {
+    "sha": "392ba002c88346bc8d5cf8e19cb233d17794e844",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6MzkyYmEwMDJjODgzNDZiYzhkNWNmOGUxOWNiMjMzZDE3Nzk0ZTg0NA==",
+    "commit": {
+      "author": {
+        "name": "Alexis Laferrière",
+        "email": "alaf@apple.com",
+        "date": "2021-08-14T05:10:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-14T05:10:17Z"
+      },
+      "message": "Merge pull request #38211 from xymus/incr-info-and-emit-module\n\n[Frontend] Emit incremental compilation info from some emit-module jobs",
+      "tree": {
+        "sha": "610d3cca90d115edaef831e986b5d62ca8ffe901",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/610d3cca90d115edaef831e986b5d62ca8ffe901"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/392ba002c88346bc8d5cf8e19cb233d17794e844",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhF1A5CRBK7hj4Ov3rIwAAl9IIAJcC/0r0FNFPwlRHPNnAgfNw\nwtYAJai1O0V4sw8NGSN9WDbeBESxmZ+IcAQSKkmb57zJLnFxSB3dXIUiEnzbihKD\nRbKJcxr/IK+ToSeELMBYDepWgOQknzYNqEtsCCI0mf88Dn0WhAWHbKmplbuFlt0j\nDSLisZ9wIbMELqavCzqMPwocYK/WTxsQCtPiX+Qdn9gazuZa5Z6WLdyXfiXiblvq\nU1oxQvtTQtNGXoTAfU3ugJ0dq53SkyGc2DK4pF3NEQvUAimC7d6c/Bn5aavL0lv2\nBIOQXOUxHK9WjGIYGuHw2XFNlk/kSpfUw6CGfwW7TOu1X++z62RKpV+4Rdc4/8U=\n=W+e3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 610d3cca90d115edaef831e986b5d62ca8ffe901\nparent cf71dc932d39319370035f0f56afbb1865c1d6cf\nparent 6fd9102b45fe63cec38b3c4f3baf18405ee89d17\nauthor Alexis Laferrière <alaf@apple.com> 1628917817 -0700\ncommitter GitHub <noreply@github.com> 1628917817 -0700\n\nMerge pull request #38211 from xymus/incr-info-and-emit-module\n\n[Frontend] Emit incremental compilation info from some emit-module jobs"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/392ba002c88346bc8d5cf8e19cb233d17794e844",
+    "html_url": "https://github.com/apple/swift/commit/392ba002c88346bc8d5cf8e19cb233d17794e844",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/392ba002c88346bc8d5cf8e19cb233d17794e844/comments",
+    "author": {
+      "login": "xymus",
+      "id": 208057,
+      "node_id": "MDQ6VXNlcjIwODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xymus",
+      "html_url": "https://github.com/xymus",
+      "followers_url": "https://api.github.com/users/xymus/followers",
+      "following_url": "https://api.github.com/users/xymus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xymus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xymus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xymus/subscriptions",
+      "organizations_url": "https://api.github.com/users/xymus/orgs",
+      "repos_url": "https://api.github.com/users/xymus/repos",
+      "events_url": "https://api.github.com/users/xymus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xymus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cf71dc932d39319370035f0f56afbb1865c1d6cf",
+        "url": "https://api.github.com/repos/apple/swift/commits/cf71dc932d39319370035f0f56afbb1865c1d6cf",
+        "html_url": "https://github.com/apple/swift/commit/cf71dc932d39319370035f0f56afbb1865c1d6cf"
+      },
+      {
+        "sha": "6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+        "url": "https://api.github.com/repos/apple/swift/commits/6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+        "html_url": "https://github.com/apple/swift/commit/6fd9102b45fe63cec38b3c4f3baf18405ee89d17"
+      }
+    ]
+  },
+  {
+    "sha": "cf71dc932d39319370035f0f56afbb1865c1d6cf",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6Y2Y3MWRjOTMyZDM5MzE5MzcwMDM1ZjBmNTZhZmJiMTg2NWMxZDZjZg==",
+    "commit": {
+      "author": {
+        "name": "Pavel Yaskevich",
+        "email": "xedin@apache.org",
+        "date": "2021-08-14T02:39:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-14T02:39:10Z"
+      },
+      "message": "Merge pull request #38878 from xedin/improve-var--without-init-error-in-resut-builder\n\n[ResultBuilders] Improve diagnostics of unsupported variable declarations",
+      "tree": {
+        "sha": "92f3460d08da32e3404b0d003d26407c3adbbea5",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/92f3460d08da32e3404b0d003d26407c3adbbea5"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/cf71dc932d39319370035f0f56afbb1865c1d6cf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFyzOCRBK7hj4Ov3rIwAAR+gIAELO6jxRwiMKKATFGxRJ/8at\nqx25BrQXLWYNL75+T6TsSCHiuejyntXA0n6SIeOV1EBR6yyjkZvEZbJYMY5ucEQa\n1hFp7B28XYVgbb2s4EUnS4Hsgli3nmSC1IuA5Sho0Cvc9LipvlOl+kp+M3HXfXmC\n1M6KJl5piYJ3n5nkoshgpV2Q6i5rjNL7w1EFk5BUfI/vRs6ha2mc2Xnu/JoDRV3w\n+wcDu3mfSRnZ9mlGMCfsuGMEGa6BjDbuH8GiDUKMv934HOVTqbuj0lqea3Jb2+9w\n2RN7sAyRppoUKyMou5ZYJiSexImq8fAmXs6nuvdMHEcVAzYtlctAj1/EMFeEt0I=\n=+qpe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 92f3460d08da32e3404b0d003d26407c3adbbea5\nparent c2ed947ede9fb250df341b7c57aa9eb487c101cc\nparent 994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f\nauthor Pavel Yaskevich <xedin@apache.org> 1628908750 -0700\ncommitter GitHub <noreply@github.com> 1628908750 -0700\n\nMerge pull request #38878 from xedin/improve-var--without-init-error-in-resut-builder\n\n[ResultBuilders] Improve diagnostics of unsupported variable declarations"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/cf71dc932d39319370035f0f56afbb1865c1d6cf",
+    "html_url": "https://github.com/apple/swift/commit/cf71dc932d39319370035f0f56afbb1865c1d6cf",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/cf71dc932d39319370035f0f56afbb1865c1d6cf/comments",
+    "author": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+        "url": "https://api.github.com/repos/apple/swift/commits/c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+        "html_url": "https://github.com/apple/swift/commit/c2ed947ede9fb250df341b7c57aa9eb487c101cc"
+      },
+      {
+        "sha": "994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+        "url": "https://api.github.com/repos/apple/swift/commits/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+        "html_url": "https://github.com/apple/swift/commit/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f"
+      }
+    ]
+  },
+  {
+    "sha": "c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6YzJlZDk0N2VkZTlmYjI1MGRmMzQxYjdjNTdhYTllYjQ4N2MxMDFjYw==",
+    "commit": {
+      "author": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-14T01:53:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-14T01:53:48Z"
+      },
+      "message": "Merge pull request #38868 from slavapestov/trie-overlapping-rules\n\nRequirementMachine: Some more performance improvements",
+      "tree": {
+        "sha": "ae20c1aa44ce98bff92571c36c68bf2041ce6866",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/ae20c1aa44ce98bff92571c36c68bf2041ce6866"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFyIsCRBK7hj4Ov3rIwAAHnwIAGhXIaUa915HJFJ0KJFlAl5V\n2SBE/8ZAsoJv4tGbROQI+ZMdg3QDNz9sCgqtFekTalQPmnDcploQQhc0Ej75Cn1+\njAZq1GKNTml2OZH3pbqukon7DDddo0pUy6qdxt8ldo/RJ6xew5f+EOwZ5fGcebT4\nWibJQ35pIJzp1wtTA36AIBft4yjPwUWJ2A1JzemDqg6RhtKwFufUjmL3EyEt7a1y\nDEZ85i7+UhebxyY3qG660pZgkCqttsr47BBcqnaK5vXkwCO1vJLtH2fKGCEomsGn\nxpU7Khy+n/opHlubsY4j0tJQ1UGTG8i4pu3IFQvvzBNIdgXiC7VKUb9Id7GYKrE=\n=Quj7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ae20c1aa44ce98bff92571c36c68bf2041ce6866\nparent f846126d5830a51a562b75d12b6f760ee62441a3\nparent eec233507be016ee7d214ec96b5b3c6d6677b946\nauthor Slava Pestov <spestov@apple.com> 1628906028 -0400\ncommitter GitHub <noreply@github.com> 1628906028 -0400\n\nMerge pull request #38868 from slavapestov/trie-overlapping-rules\n\nRequirementMachine: Some more performance improvements"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+    "html_url": "https://github.com/apple/swift/commit/c2ed947ede9fb250df341b7c57aa9eb487c101cc",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/c2ed947ede9fb250df341b7c57aa9eb487c101cc/comments",
+    "author": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f846126d5830a51a562b75d12b6f760ee62441a3",
+        "url": "https://api.github.com/repos/apple/swift/commits/f846126d5830a51a562b75d12b6f760ee62441a3",
+        "html_url": "https://github.com/apple/swift/commit/f846126d5830a51a562b75d12b6f760ee62441a3"
+      },
+      {
+        "sha": "eec233507be016ee7d214ec96b5b3c6d6677b946",
+        "url": "https://api.github.com/repos/apple/swift/commits/eec233507be016ee7d214ec96b5b3c6d6677b946",
+        "html_url": "https://github.com/apple/swift/commit/eec233507be016ee7d214ec96b5b3c6d6677b946"
+      }
+    ]
+  },
+  {
+    "sha": "6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6NmZkOTEwMmI0NWZlNjNjZWMzOGIzYzRmM2JhZjE4NDA1ZWU4OWQxNw==",
+    "commit": {
+      "author": {
+        "name": "Alexis Laferrière",
+        "email": "alaf@apple.com",
+        "date": "2021-08-06T16:56:32Z"
+      },
+      "committer": {
+        "name": "Alexis Laferrière",
+        "email": "alaf@apple.com",
+        "date": "2021-08-13T23:53:42Z"
+      },
+      "message": "[AST] Accept SynthesizedFileUnit in populateMemberCache\n\nThe differentiation and actor logics insert SynthesizedFileUnit in\nSourceFile modules. Accepting these file units in populateMemberCache\nallow to cache all the top-level decls of source file modules.",
+      "tree": {
+        "sha": "fadda5244bc46ec1bf55c3df22018f52ffa47d61",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/fadda5244bc46ec1bf55c3df22018f52ffa47d61"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+    "html_url": "https://github.com/apple/swift/commit/6fd9102b45fe63cec38b3c4f3baf18405ee89d17",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/6fd9102b45fe63cec38b3c4f3baf18405ee89d17/comments",
+    "author": {
+      "login": "xymus",
+      "id": 208057,
+      "node_id": "MDQ6VXNlcjIwODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xymus",
+      "html_url": "https://github.com/xymus",
+      "followers_url": "https://api.github.com/users/xymus/followers",
+      "following_url": "https://api.github.com/users/xymus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xymus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xymus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xymus/subscriptions",
+      "organizations_url": "https://api.github.com/users/xymus/orgs",
+      "repos_url": "https://api.github.com/users/xymus/repos",
+      "events_url": "https://api.github.com/users/xymus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xymus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xymus",
+      "id": 208057,
+      "node_id": "MDQ6VXNlcjIwODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xymus",
+      "html_url": "https://github.com/xymus",
+      "followers_url": "https://api.github.com/users/xymus/followers",
+      "following_url": "https://api.github.com/users/xymus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xymus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xymus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xymus/subscriptions",
+      "organizations_url": "https://api.github.com/users/xymus/orgs",
+      "repos_url": "https://api.github.com/users/xymus/repos",
+      "events_url": "https://api.github.com/users/xymus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xymus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "577886408b8c25dd4c39eacdcdfc76109de87e0d",
+        "url": "https://api.github.com/repos/apple/swift/commits/577886408b8c25dd4c39eacdcdfc76109de87e0d",
+        "html_url": "https://github.com/apple/swift/commit/577886408b8c25dd4c39eacdcdfc76109de87e0d"
+      }
+    ]
+  },
+  {
+    "sha": "577886408b8c25dd4c39eacdcdfc76109de87e0d",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6NTc3ODg2NDA4YjhjMjVkZDRjMzllYWNkY2RmYzc2MTA5ZGU4N2UwZA==",
+    "commit": {
+      "author": {
+        "name": "Alexis Laferrière",
+        "email": "alaf@apple.com",
+        "date": "2021-07-28T21:46:08Z"
+      },
+      "committer": {
+        "name": "Alexis Laferrière",
+        "email": "alaf@apple.com",
+        "date": "2021-08-13T23:53:42Z"
+      },
+      "message": "[Frontend] Emit incr compilation info from emit-module jobs\n\nEnable emitting the module-level incremental fine-grained compilation\ninformation from the emit-module job for incremental compilation to\nwork with emit-module-separately.",
+      "tree": {
+        "sha": "eaa9b15e06e2dc01942de2e13d80cb3a62ee1297",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/eaa9b15e06e2dc01942de2e13d80cb3a62ee1297"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/577886408b8c25dd4c39eacdcdfc76109de87e0d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/577886408b8c25dd4c39eacdcdfc76109de87e0d",
+    "html_url": "https://github.com/apple/swift/commit/577886408b8c25dd4c39eacdcdfc76109de87e0d",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/577886408b8c25dd4c39eacdcdfc76109de87e0d/comments",
+    "author": {
+      "login": "xymus",
+      "id": 208057,
+      "node_id": "MDQ6VXNlcjIwODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xymus",
+      "html_url": "https://github.com/xymus",
+      "followers_url": "https://api.github.com/users/xymus/followers",
+      "following_url": "https://api.github.com/users/xymus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xymus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xymus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xymus/subscriptions",
+      "organizations_url": "https://api.github.com/users/xymus/orgs",
+      "repos_url": "https://api.github.com/users/xymus/repos",
+      "events_url": "https://api.github.com/users/xymus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xymus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xymus",
+      "id": 208057,
+      "node_id": "MDQ6VXNlcjIwODA1Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xymus",
+      "html_url": "https://github.com/xymus",
+      "followers_url": "https://api.github.com/users/xymus/followers",
+      "following_url": "https://api.github.com/users/xymus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xymus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xymus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xymus/subscriptions",
+      "organizations_url": "https://api.github.com/users/xymus/orgs",
+      "repos_url": "https://api.github.com/users/xymus/repos",
+      "events_url": "https://api.github.com/users/xymus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xymus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d75b34be22e0cfe944d6e02d641c3d1305d19d82",
+        "url": "https://api.github.com/repos/apple/swift/commits/d75b34be22e0cfe944d6e02d641c3d1305d19d82",
+        "html_url": "https://github.com/apple/swift/commit/d75b34be22e0cfe944d6e02d641c3d1305d19d82"
+      }
+    ]
+  },
+  {
+    "sha": "f846126d5830a51a562b75d12b6f760ee62441a3",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6Zjg0NjEyNmQ1ODMwYTUxYTU2MmI3NWQxMmI2Zjc2MGVlNjI0NDFhMw==",
+    "commit": {
+      "author": {
+        "name": "Ben Langmuir",
+        "email": "blangmuir@apple.com",
+        "date": "2021-08-13T23:49:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T23:49:10Z"
+      },
+      "message": "Merge pull request #38876 from benlangmuir/url-search\n\nFix URL detection for \"sip\" and \"service\" schemes",
+      "tree": {
+        "sha": "e99f673d46fd8f6a79daffbc7ba0f0e0d7d8d857",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/e99f673d46fd8f6a79daffbc7ba0f0e0d7d8d857"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/f846126d5830a51a562b75d12b6f760ee62441a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFwT2CRBK7hj4Ov3rIwAA8M0IACNVyL3Br5mNHx/aAozsZkPu\niduJNNb3EkwOl1ueChPkedlV8JJS1maCrVOfKFilvPGgEd4nU3Vu+kDi8uyk+z8A\niFsBHtI4C5+dcmBqMLvK8q3QPZf3KgQfoaJaZE4tT+CqDVtZo5M4mVKRi4MiqJ3Z\nYwN/UuvhliYOGFG2uaGhcFnuaVBjHvhYrR1N20embuLvmczDjNzV8b8L3ve8NRCK\npwMJ1vdKS7z3LTZkxc5luEAWLyPGFR+Fj1DoNpBs0B1d59s0nq1qjXXK/4+XeQ0z\nZLnj6C4N8adfL3GD663bQlOjKgLVHzkD17OSekuR32+u28U7+CBLwTA1Ucs6gcQ=\n=sLJl\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e99f673d46fd8f6a79daffbc7ba0f0e0d7d8d857\nparent f1036c26819eef2a9af5431327cb65814b86abff\nparent c7c899ead8d386e3f3f66d1b1bad31b1963d6d56\nauthor Ben Langmuir <blangmuir@apple.com> 1628898550 -0700\ncommitter GitHub <noreply@github.com> 1628898550 -0700\n\nMerge pull request #38876 from benlangmuir/url-search\n\nFix URL detection for \"sip\" and \"service\" schemes"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/f846126d5830a51a562b75d12b6f760ee62441a3",
+    "html_url": "https://github.com/apple/swift/commit/f846126d5830a51a562b75d12b6f760ee62441a3",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/f846126d5830a51a562b75d12b6f760ee62441a3/comments",
+    "author": {
+      "login": "benlangmuir",
+      "id": 3412956,
+      "node_id": "MDQ6VXNlcjM0MTI5NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3412956?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/benlangmuir",
+      "html_url": "https://github.com/benlangmuir",
+      "followers_url": "https://api.github.com/users/benlangmuir/followers",
+      "following_url": "https://api.github.com/users/benlangmuir/following{/other_user}",
+      "gists_url": "https://api.github.com/users/benlangmuir/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/benlangmuir/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/benlangmuir/subscriptions",
+      "organizations_url": "https://api.github.com/users/benlangmuir/orgs",
+      "repos_url": "https://api.github.com/users/benlangmuir/repos",
+      "events_url": "https://api.github.com/users/benlangmuir/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/benlangmuir/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f1036c26819eef2a9af5431327cb65814b86abff",
+        "url": "https://api.github.com/repos/apple/swift/commits/f1036c26819eef2a9af5431327cb65814b86abff",
+        "html_url": "https://github.com/apple/swift/commit/f1036c26819eef2a9af5431327cb65814b86abff"
+      },
+      {
+        "sha": "c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+        "url": "https://api.github.com/repos/apple/swift/commits/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+        "html_url": "https://github.com/apple/swift/commit/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56"
+      }
+    ]
+  },
+  {
+    "sha": "f1036c26819eef2a9af5431327cb65814b86abff",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ZjEwMzZjMjY4MTllZWYyYTlhZjU0MzEzMjdjYjY1ODE0Yjg2YWJmZg==",
+    "commit": {
+      "author": {
+        "name": "Ben Barham",
+        "email": "ben_barham@apple.com",
+        "date": "2021-08-13T23:45:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T23:45:13Z"
+      },
+      "message": "Merge pull request #38869 from apple/empty-witness-assert\n\n[Deserialization] Do not assert on a missing witness if allowing errors",
+      "tree": {
+        "sha": "a7ab81657b816b1f004e167ce2cb260735fb8d0a",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/a7ab81657b816b1f004e167ce2cb260735fb8d0a"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/f1036c26819eef2a9af5431327cb65814b86abff",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFwQJCRBK7hj4Ov3rIwAAka8IAA2ojK05+8wzmeCWz6QHPIo/\n/9eLwxw+2gD2wmHvqtw6tqDVyYPH1O4WYs+QH4D8UZFlj/kJS8k1mKSjnyseifmX\nwh+QMGrrI22axIqlq+7ftgOSFJH26qYxu9ZHDsk2ek9KvQe4BATluvw5WTpdGSRH\nzxT8/+459TzzkBr2IWU5qBlzrWM88EMPRwhpfwmixhszywBHSumt9uaAK75Iab7X\nN6LwRvu98QU52TyyoPWlU4azpDruqR6RA4nhwoDsp+093RrIjAv/i3aL0rXlVkKz\nMO2xFF9biqXC8X8BEAooIIaRD2uhL9KUOX1xYFFJ8FLlo4gowWIPS+EDj/wj4JI=\n=WOXr\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a7ab81657b816b1f004e167ce2cb260735fb8d0a\nparent d44d2640f86f43d0c572cfc379ae3325a99c6ba1\nparent 3afb498896a75f066ee97b4d471a0d4a6d623420\nauthor Ben Barham <ben_barham@apple.com> 1628898313 +1000\ncommitter GitHub <noreply@github.com> 1628898313 +1000\n\nMerge pull request #38869 from apple/empty-witness-assert\n\n[Deserialization] Do not assert on a missing witness if allowing errors"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/f1036c26819eef2a9af5431327cb65814b86abff",
+    "html_url": "https://github.com/apple/swift/commit/f1036c26819eef2a9af5431327cb65814b86abff",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/f1036c26819eef2a9af5431327cb65814b86abff/comments",
+    "author": {
+      "login": "bnbarham",
+      "id": 1628798,
+      "node_id": "MDQ6VXNlcjE2Mjg3OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1628798?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnbarham",
+      "html_url": "https://github.com/bnbarham",
+      "followers_url": "https://api.github.com/users/bnbarham/followers",
+      "following_url": "https://api.github.com/users/bnbarham/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bnbarham/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bnbarham/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bnbarham/subscriptions",
+      "organizations_url": "https://api.github.com/users/bnbarham/orgs",
+      "repos_url": "https://api.github.com/users/bnbarham/repos",
+      "events_url": "https://api.github.com/users/bnbarham/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bnbarham/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+        "url": "https://api.github.com/repos/apple/swift/commits/d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+        "html_url": "https://github.com/apple/swift/commit/d44d2640f86f43d0c572cfc379ae3325a99c6ba1"
+      },
+      {
+        "sha": "3afb498896a75f066ee97b4d471a0d4a6d623420",
+        "url": "https://api.github.com/repos/apple/swift/commits/3afb498896a75f066ee97b4d471a0d4a6d623420",
+        "html_url": "https://github.com/apple/swift/commit/3afb498896a75f066ee97b4d471a0d4a6d623420"
+      }
+    ]
+  },
+  {
+    "sha": "eec233507be016ee7d214ec96b5b3c6d6677b946",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ZWVjMjMzNTA3YmUwMTZlZTdkMjE0ZWM5NmI1YjNjNmQ2Njc3Yjk0Ng==",
+    "commit": {
+      "author": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T21:27:15Z"
+      },
+      "committer": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T21:27:49Z"
+      },
+      "message": "RequirementMachine: Cache the mapping from associated type symbols to associated type declarations",
+      "tree": {
+        "sha": "ac27b06726979e74289fd792d103c4a869e66cd9",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/ac27b06726979e74289fd792d103c4a869e66cd9"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/eec233507be016ee7d214ec96b5b3c6d6677b946",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/eec233507be016ee7d214ec96b5b3c6d6677b946",
+    "html_url": "https://github.com/apple/swift/commit/eec233507be016ee7d214ec96b5b3c6d6677b946",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/eec233507be016ee7d214ec96b5b3c6d6677b946/comments",
+    "author": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+        "url": "https://api.github.com/repos/apple/swift/commits/0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+        "html_url": "https://github.com/apple/swift/commit/0602a2ede345d1a4698f5d48a4f827fc5b02a27f"
+      }
+    ]
+  },
+  {
+    "sha": "d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ZDQ0ZDI2NDBmODZmNDNkMGM1NzJjZmMzNzlhZTMzMjVhOTljNmJhMQ==",
+    "commit": {
+      "author": {
+        "name": "Xi Ge",
+        "email": "xi_ge@apple.com",
+        "date": "2021-08-13T20:50:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T20:50:59Z"
+      },
+      "message": "Merge pull request #38874 from nkcsgexi/81903124\n\nModuleInterface: avoid omitting platform names when printing @available",
+      "tree": {
+        "sha": "bdc0fbfc7111c97cf78258b0d1f4c3d3b1b1cc82",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/bdc0fbfc7111c97cf78258b0d1f4c3d3b1b1cc82"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFtszCRBK7hj4Ov3rIwAArfAIAHu3lQ+4YU7TTd5ANYRwh7zI\n+i+I1ol4S8Rf4dVmUXKK0scnMFF5uW9G/jj4+HKxSV7OUpcBCwbU6cJYsVlMTQsl\ntNy6aH7ZN/buC5e4/i3moowEK9Q6/KwraOgW7q/l0fR2WLkFlIJj3c6gXnHc9Ctg\nP4qIMUTXD4S0ItTkZAMa0YAa9NAqtiRjlunANmBGIPiUWi7B2dVf89aKQIVlMoYs\nANLrzMfhQYPrFP0qEVQvUEzPy95IiH442vdBZr9+YVraMwd3a4/fmmDTcgsAHC1x\nINTH/WAuJGDV8FbiXoLf+ZurLN8xlrck6q+z1ubY0n7KIdQhl+REZYw4U6XQpTA=\n=x00w\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bdc0fbfc7111c97cf78258b0d1f4c3d3b1b1cc82\nparent b572194e489eb49ab114a21de89ba7b964809a09\nparent c2e4e866706b2ddb7482f89c6138ae999fcc3eb7\nauthor Xi Ge <xi_ge@apple.com> 1628887859 -0700\ncommitter GitHub <noreply@github.com> 1628887859 -0700\n\nMerge pull request #38874 from nkcsgexi/81903124\n\nModuleInterface: avoid omitting platform names when printing @available"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+    "html_url": "https://github.com/apple/swift/commit/d44d2640f86f43d0c572cfc379ae3325a99c6ba1",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/d44d2640f86f43d0c572cfc379ae3325a99c6ba1/comments",
+    "author": {
+      "login": "nkcsgexi",
+      "id": 2191945,
+      "node_id": "MDQ6VXNlcjIxOTE5NDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2191945?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nkcsgexi",
+      "html_url": "https://github.com/nkcsgexi",
+      "followers_url": "https://api.github.com/users/nkcsgexi/followers",
+      "following_url": "https://api.github.com/users/nkcsgexi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nkcsgexi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nkcsgexi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nkcsgexi/subscriptions",
+      "organizations_url": "https://api.github.com/users/nkcsgexi/orgs",
+      "repos_url": "https://api.github.com/users/nkcsgexi/repos",
+      "events_url": "https://api.github.com/users/nkcsgexi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nkcsgexi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b572194e489eb49ab114a21de89ba7b964809a09",
+        "url": "https://api.github.com/repos/apple/swift/commits/b572194e489eb49ab114a21de89ba7b964809a09",
+        "html_url": "https://github.com/apple/swift/commit/b572194e489eb49ab114a21de89ba7b964809a09"
+      },
+      {
+        "sha": "c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+        "url": "https://api.github.com/repos/apple/swift/commits/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+        "html_url": "https://github.com/apple/swift/commit/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7"
+      }
+    ]
+  },
+  {
+    "sha": "994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6OTk0ZjlhOWEzZDdmYjVjZjZmNjdkOWQyMmQ0ODRlYTk4NTNkMjM4Zg==",
+    "commit": {
+      "author": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T20:42:13Z"
+      },
+      "committer": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T20:42:13Z"
+      },
+      "message": "[Diagnostics] Result Builders: Improve diagnostic for unsupported observed vars",
+      "tree": {
+        "sha": "f3de679acafd61c72f0ae6e43e920ab470134223",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/f3de679acafd61c72f0ae6e43e920ab470134223"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+    "html_url": "https://github.com/apple/swift/commit/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/994f9a9a3d7fb5cf6f67d9d22d484ea9853d238f/comments",
+    "author": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+        "url": "https://api.github.com/repos/apple/swift/commits/0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+        "html_url": "https://github.com/apple/swift/commit/0074adc6fe97017d38acde0be7057d11d3e1fbcf"
+      }
+    ]
+  },
+  {
+    "sha": "0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6MDYwMmEyZWRlMzQ1ZDFhNDY5OGY1ZDQ4YTRmODI3ZmM1YjAyYTI3Zg==",
+    "commit": {
+      "author": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T20:19:52Z"
+      },
+      "committer": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T20:34:32Z"
+      },
+      "message": "RequirementMachine: Simplify right hand sides on each iteration of completion",
+      "tree": {
+        "sha": "8f570ef31c3c399e6428a7da2a4c1b233ea2479a",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/8f570ef31c3c399e6428a7da2a4c1b233ea2479a"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+    "html_url": "https://github.com/apple/swift/commit/0602a2ede345d1a4698f5d48a4f827fc5b02a27f",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/0602a2ede345d1a4698f5d48a4f827fc5b02a27f/comments",
+    "author": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0766c1c46006cf088a92376629557ffd4204018b",
+        "url": "https://api.github.com/repos/apple/swift/commits/0766c1c46006cf088a92376629557ffd4204018b",
+        "html_url": "https://github.com/apple/swift/commit/0766c1c46006cf088a92376629557ffd4204018b"
+      }
+    ]
+  },
+  {
+    "sha": "0766c1c46006cf088a92376629557ffd4204018b",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6MDc2NmMxYzQ2MDA2Y2YwODhhOTIzNzY2Mjk1NTdmZmQ0MjA0MDE4Yg==",
+    "commit": {
+      "author": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T19:47:38Z"
+      },
+      "committer": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T20:34:32Z"
+      },
+      "message": "RequirementMachine: Use a trie to speed up merged associated types pass",
+      "tree": {
+        "sha": "302f440908203e5493e37e8c2b9fdb8299cd3150",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/302f440908203e5493e37e8c2b9fdb8299cd3150"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/0766c1c46006cf088a92376629557ffd4204018b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/0766c1c46006cf088a92376629557ffd4204018b",
+    "html_url": "https://github.com/apple/swift/commit/0766c1c46006cf088a92376629557ffd4204018b",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/0766c1c46006cf088a92376629557ffd4204018b/comments",
+    "author": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "af05377afafc8aaaae00bbaa2d64ae14978069e1",
+        "url": "https://api.github.com/repos/apple/swift/commits/af05377afafc8aaaae00bbaa2d64ae14978069e1",
+        "html_url": "https://github.com/apple/swift/commit/af05377afafc8aaaae00bbaa2d64ae14978069e1"
+      }
+    ]
+  },
+  {
+    "sha": "af05377afafc8aaaae00bbaa2d64ae14978069e1",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6YWYwNTM3N2FmYWZjOGFhYWFlMDBiYmFhMmQ2NGFlMTQ5NzgwNjllMQ==",
+    "commit": {
+      "author": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T01:45:49Z"
+      },
+      "committer": {
+        "name": "Slava Pestov",
+        "email": "spestov@apple.com",
+        "date": "2021-08-13T20:34:27Z"
+      },
+      "message": "RequirementMachine: Use trie to find overlapping rules",
+      "tree": {
+        "sha": "66db98b8b5883cd9e7af27c0615c4da923fc62e4",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/66db98b8b5883cd9e7af27c0615c4da923fc62e4"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/af05377afafc8aaaae00bbaa2d64ae14978069e1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/af05377afafc8aaaae00bbaa2d64ae14978069e1",
+    "html_url": "https://github.com/apple/swift/commit/af05377afafc8aaaae00bbaa2d64ae14978069e1",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/af05377afafc8aaaae00bbaa2d64ae14978069e1/comments",
+    "author": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "slavapestov",
+      "id": 66486,
+      "node_id": "MDQ6VXNlcjY2NDg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slavapestov",
+      "html_url": "https://github.com/slavapestov",
+      "followers_url": "https://api.github.com/users/slavapestov/followers",
+      "following_url": "https://api.github.com/users/slavapestov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slavapestov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slavapestov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slavapestov/subscriptions",
+      "organizations_url": "https://api.github.com/users/slavapestov/orgs",
+      "repos_url": "https://api.github.com/users/slavapestov/repos",
+      "events_url": "https://api.github.com/users/slavapestov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slavapestov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b572194e489eb49ab114a21de89ba7b964809a09",
+        "url": "https://api.github.com/repos/apple/swift/commits/b572194e489eb49ab114a21de89ba7b964809a09",
+        "html_url": "https://github.com/apple/swift/commit/b572194e489eb49ab114a21de89ba7b964809a09"
+      }
+    ]
+  },
+  {
+    "sha": "0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6MDA3NGFkYzZmZTk3MDE3ZDM4YWNkZTBiZTcwNTdkMTFkM2UxZmJjZg==",
+    "commit": {
+      "author": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T19:30:16Z"
+      },
+      "committer": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T19:30:16Z"
+      },
+      "message": "[Diagnostics] Result Builders: Extract pattern binding and var storage diagnostics into methods",
+      "tree": {
+        "sha": "02cf3b00c6d63b58b8b0098661063cd3412af1e0",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/02cf3b00c6d63b58b8b0098661063cd3412af1e0"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+    "html_url": "https://github.com/apple/swift/commit/0074adc6fe97017d38acde0be7057d11d3e1fbcf",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/0074adc6fe97017d38acde0be7057d11d3e1fbcf/comments",
+    "author": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+        "url": "https://api.github.com/repos/apple/swift/commits/85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+        "html_url": "https://github.com/apple/swift/commit/85d203cb3490d9b99ba62e71c9b4ce8734d2809d"
+      }
+    ]
+  },
+  {
+    "sha": "c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6YzdjODk5ZWFkOGQzODZlM2YzZjY2ZDFiMWJhZDMxYjE5NjNkNmQ1Ng==",
+    "commit": {
+      "author": {
+        "name": "Ben Langmuir",
+        "email": "blangmuir@apple.com",
+        "date": "2021-08-13T19:13:23Z"
+      },
+      "committer": {
+        "name": "Ben Langmuir",
+        "email": "blangmuir@apple.com",
+        "date": "2021-08-13T19:20:11Z"
+      },
+      "message": "Fix URL detection for \"sip\" and \"service\" schemes\n\nWe were concatenating these strings due to the missing comma. Found by\nclang-tidy.",
+      "tree": {
+        "sha": "dbf125b19bddc63514f5a5740d61d0969cecd794",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/dbf125b19bddc63514f5a5740d61d0969cecd794"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+    "html_url": "https://github.com/apple/swift/commit/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/c7c899ead8d386e3f3f66d1b1bad31b1963d6d56/comments",
+    "author": {
+      "login": "benlangmuir",
+      "id": 3412956,
+      "node_id": "MDQ6VXNlcjM0MTI5NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3412956?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/benlangmuir",
+      "html_url": "https://github.com/benlangmuir",
+      "followers_url": "https://api.github.com/users/benlangmuir/followers",
+      "following_url": "https://api.github.com/users/benlangmuir/following{/other_user}",
+      "gists_url": "https://api.github.com/users/benlangmuir/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/benlangmuir/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/benlangmuir/subscriptions",
+      "organizations_url": "https://api.github.com/users/benlangmuir/orgs",
+      "repos_url": "https://api.github.com/users/benlangmuir/repos",
+      "events_url": "https://api.github.com/users/benlangmuir/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/benlangmuir/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "benlangmuir",
+      "id": 3412956,
+      "node_id": "MDQ6VXNlcjM0MTI5NTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3412956?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/benlangmuir",
+      "html_url": "https://github.com/benlangmuir",
+      "followers_url": "https://api.github.com/users/benlangmuir/followers",
+      "following_url": "https://api.github.com/users/benlangmuir/following{/other_user}",
+      "gists_url": "https://api.github.com/users/benlangmuir/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/benlangmuir/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/benlangmuir/subscriptions",
+      "organizations_url": "https://api.github.com/users/benlangmuir/orgs",
+      "repos_url": "https://api.github.com/users/benlangmuir/repos",
+      "events_url": "https://api.github.com/users/benlangmuir/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/benlangmuir/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b572194e489eb49ab114a21de89ba7b964809a09",
+        "url": "https://api.github.com/repos/apple/swift/commits/b572194e489eb49ab114a21de89ba7b964809a09",
+        "html_url": "https://github.com/apple/swift/commit/b572194e489eb49ab114a21de89ba7b964809a09"
+      }
+    ]
+  },
+  {
+    "sha": "85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ODVkMjAzY2IzNDkwZDliOTliYTYyZTcxYzliNGNlODczNGQyODA5ZA==",
+    "commit": {
+      "author": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T18:45:26Z"
+      },
+      "committer": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T19:04:06Z"
+      },
+      "message": "[Diagnostics] Result Builders: Improve diagnostic for unsupported lazy/wrapped/computed vars",
+      "tree": {
+        "sha": "ea581d1f266738fa39230c0cb0e4712b650baf32",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/ea581d1f266738fa39230c0cb0e4712b650baf32"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+    "html_url": "https://github.com/apple/swift/commit/85d203cb3490d9b99ba62e71c9b4ce8734d2809d",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/85d203cb3490d9b99ba62e71c9b4ce8734d2809d/comments",
+    "author": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+        "url": "https://api.github.com/repos/apple/swift/commits/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+        "html_url": "https://github.com/apple/swift/commit/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53"
+      }
+    ]
+  },
+  {
+    "sha": "b572194e489eb49ab114a21de89ba7b964809a09",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6YjU3MjE5NGU0ODllYjQ5YWIxMTRhMjFkZTg5YmE3Yjk2NDgwOWEwOQ==",
+    "commit": {
+      "author": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T18:38:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T18:38:13Z"
+      },
+      "message": "Merge pull request #38854 from hborla/wrapped-param-in-init\n\n[SILGen] Fix a couple bugs with wrapped parameters in initializers.",
+      "tree": {
+        "sha": "0171c03068f7b0f96062b4b40afba07261f2b485",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/0171c03068f7b0f96062b4b40afba07261f2b485"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/b572194e489eb49ab114a21de89ba7b964809a09",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFrwVCRBK7hj4Ov3rIwAAQmcIADosCY3Tw0kRO0Nq4i6Gw/ue\n/AFWqUvif/P80e3q+ShnDdxqGHW9c1oOCYTKUTt5BNk0gC6x7D9oQdmJ1IL2NkaK\nPL78Uu20OO5oBowHzX2+iOPlEFJOBgtLZXFyfPlpqvdSLP5aVhGBvK8hKncbIsad\nJMGj7U4yE2iEsWTaWWZ8q4DxT83u6Wkf3oOcrlyMxbrbD9UzcH/wgwXCFclIXZXu\nIpYvPYSHDzeZXP37SyWaLqmwCKFRT4WwnqiEgHKJjyYT551R5moYf+2JHO35U7zu\nJGfWY9I5P2LjwuJP1XhB1TlJ3QGlQg0Sji6UuFSB6axpw6JZjjm7cob4jW8TEVk=\n=oLy1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0171c03068f7b0f96062b4b40afba07261f2b485\nparent 861f47fc4c039fbc8a4b4fb27d851f5bb9a88983\nparent f302c20ff0fe632c3bb370a6f3b766b2ecad5794\nauthor Holly Borla <hborla@apple.com> 1628879893 -0700\ncommitter GitHub <noreply@github.com> 1628879893 -0700\n\nMerge pull request #38854 from hborla/wrapped-param-in-init\n\n[SILGen] Fix a couple bugs with wrapped parameters in initializers."
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/b572194e489eb49ab114a21de89ba7b964809a09",
+    "html_url": "https://github.com/apple/swift/commit/b572194e489eb49ab114a21de89ba7b964809a09",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/b572194e489eb49ab114a21de89ba7b964809a09/comments",
+    "author": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+        "url": "https://api.github.com/repos/apple/swift/commits/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+        "html_url": "https://github.com/apple/swift/commit/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983"
+      },
+      {
+        "sha": "f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+        "url": "https://api.github.com/repos/apple/swift/commits/f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+        "html_url": "https://github.com/apple/swift/commit/f302c20ff0fe632c3bb370a6f3b766b2ecad5794"
+      }
+    ]
+  },
+  {
+    "sha": "c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6YzJlNGU4NjY3MDZiMmRkYjc0ODJmODljNjEzOGFlOTk5ZmNjM2ViNw==",
+    "commit": {
+      "author": {
+        "name": "Xi Ge",
+        "email": "xi_ge@apple.com",
+        "date": "2021-08-13T18:14:08Z"
+      },
+      "committer": {
+        "name": "Xi Ge",
+        "email": "xi_ge@apple.com",
+        "date": "2021-08-13T18:14:11Z"
+      },
+      "message": "ModuleInterface: avoid omitting platform names when printing @available\n\nrdar://81903124",
+      "tree": {
+        "sha": "2340fe1c936db32b991063b0808e29efec7c9240",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/2340fe1c936db32b991063b0808e29efec7c9240"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+    "html_url": "https://github.com/apple/swift/commit/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/c2e4e866706b2ddb7482f89c6138ae999fcc3eb7/comments",
+    "author": {
+      "login": "nkcsgexi",
+      "id": 2191945,
+      "node_id": "MDQ6VXNlcjIxOTE5NDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2191945?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nkcsgexi",
+      "html_url": "https://github.com/nkcsgexi",
+      "followers_url": "https://api.github.com/users/nkcsgexi/followers",
+      "following_url": "https://api.github.com/users/nkcsgexi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nkcsgexi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nkcsgexi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nkcsgexi/subscriptions",
+      "organizations_url": "https://api.github.com/users/nkcsgexi/orgs",
+      "repos_url": "https://api.github.com/users/nkcsgexi/repos",
+      "events_url": "https://api.github.com/users/nkcsgexi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nkcsgexi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "nkcsgexi",
+      "id": 2191945,
+      "node_id": "MDQ6VXNlcjIxOTE5NDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2191945?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nkcsgexi",
+      "html_url": "https://github.com/nkcsgexi",
+      "followers_url": "https://api.github.com/users/nkcsgexi/followers",
+      "following_url": "https://api.github.com/users/nkcsgexi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nkcsgexi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nkcsgexi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nkcsgexi/subscriptions",
+      "organizations_url": "https://api.github.com/users/nkcsgexi/orgs",
+      "repos_url": "https://api.github.com/users/nkcsgexi/repos",
+      "events_url": "https://api.github.com/users/nkcsgexi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nkcsgexi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+        "url": "https://api.github.com/repos/apple/swift/commits/54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+        "html_url": "https://github.com/apple/swift/commit/54b88bf1595baa9ead4a20ea81c008c881b5e94e"
+      }
+    ]
+  },
+  {
+    "sha": "67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6NjczNzcyMTZkZWQ1NmM1ZTdmNmRiZjdiZmJiZmM4MjkwYWVjYmQ1Mw==",
+    "commit": {
+      "author": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-12T22:57:54Z"
+      },
+      "committer": {
+        "name": "Pavel Yaskevich",
+        "email": "pyaskevich@apple.com",
+        "date": "2021-08-13T17:41:13Z"
+      },
+      "message": "[Diagnostics] Result Builders: Improve diagnostic for uninitialized variable declarations\n\nResolves: rdar://81532339",
+      "tree": {
+        "sha": "f220b240c7a2b40466246d7feed4fafd334493e2",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/f220b240c7a2b40466246d7feed4fafd334493e2"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+    "html_url": "https://github.com/apple/swift/commit/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/67377216ded56c5e7f6dbf7bfbbfc8290aecbd53/comments",
+    "author": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xedin",
+      "id": 21240,
+      "node_id": "MDQ6VXNlcjIxMjQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21240?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xedin",
+      "html_url": "https://github.com/xedin",
+      "followers_url": "https://api.github.com/users/xedin/followers",
+      "following_url": "https://api.github.com/users/xedin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xedin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xedin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xedin/subscriptions",
+      "organizations_url": "https://api.github.com/users/xedin/orgs",
+      "repos_url": "https://api.github.com/users/xedin/repos",
+      "events_url": "https://api.github.com/users/xedin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xedin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b65127861613a73f739682aa789492d1012bfc36",
+        "url": "https://api.github.com/repos/apple/swift/commits/b65127861613a73f739682aa789492d1012bfc36",
+        "html_url": "https://github.com/apple/swift/commit/b65127861613a73f739682aa789492d1012bfc36"
+      }
+    ]
+  },
+  {
+    "sha": "861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ODYxZjQ3ZmM0YzAzOWZiYzhhNGI0ZmIyN2Q4NTFmNWJiOWE4ODk4Mw==",
+    "commit": {
+      "author": {
+        "name": "Josh Learn",
+        "email": "joshua.learn@apple.com",
+        "date": "2021-08-13T17:23:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T17:23:59Z"
+      },
+      "message": "Merge pull request #38777 from guitard0g/unreachable-keypath\n\n[diagnose-unreachable] Fix incorrect diagnostic on keypath creation",
+      "tree": {
+        "sha": "e1be56c6a5aca6d2b0c1e633309c6c91d09c9bc2",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/e1be56c6a5aca6d2b0c1e633309c6c91d09c9bc2"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFqqvCRBK7hj4Ov3rIwAAIo8IAFUsuwKFZwmHaKJcID+eUbh7\ns5xyNgJmYpyQ+n2aQFO5Z2AFx2oKWIWNzydpVOwntrO9/GIiQkDi9tpe2G4u/41P\neuicNPnjebwYMCDFymC0y4zm+U8f+7on/fSjgSMFgD0ZzldkUtndby3x04vzQgSw\nsbCMAjej51guGvbZh77SvGByqpqGywicBznTNq6VORPGCsf87YCDLVb41ewEEwNq\nbEPdQpXGqtdWfqKmoxwpTC8ujbaUqVSRPiBR6Q3qGfGFz72Oj+w+v2oWHGM+i9PV\nVuJ7oPSWwYPHObRH6OTESpYn4Ypiwucs0h4iDugbTa8uj9fwjW3a3OX+JdeCjSM=\n=rQ9H\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e1be56c6a5aca6d2b0c1e633309c6c91d09c9bc2\nparent 54b88bf1595baa9ead4a20ea81c008c881b5e94e\nparent a1bde15fb4d28adb9c124d60223e5473ea332a41\nauthor Josh Learn <joshua.learn@apple.com> 1628875439 -0700\ncommitter GitHub <noreply@github.com> 1628875439 -0700\n\nMerge pull request #38777 from guitard0g/unreachable-keypath\n\n[diagnose-unreachable] Fix incorrect diagnostic on keypath creation"
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+    "html_url": "https://github.com/apple/swift/commit/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/861f47fc4c039fbc8a4b4fb27d851f5bb9a88983/comments",
+    "author": {
+      "login": "guitard0g",
+      "id": 11187231,
+      "node_id": "MDQ6VXNlcjExMTg3MjMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11187231?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/guitard0g",
+      "html_url": "https://github.com/guitard0g",
+      "followers_url": "https://api.github.com/users/guitard0g/followers",
+      "following_url": "https://api.github.com/users/guitard0g/following{/other_user}",
+      "gists_url": "https://api.github.com/users/guitard0g/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/guitard0g/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/guitard0g/subscriptions",
+      "organizations_url": "https://api.github.com/users/guitard0g/orgs",
+      "repos_url": "https://api.github.com/users/guitard0g/repos",
+      "events_url": "https://api.github.com/users/guitard0g/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/guitard0g/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+        "url": "https://api.github.com/repos/apple/swift/commits/54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+        "html_url": "https://github.com/apple/swift/commit/54b88bf1595baa9ead4a20ea81c008c881b5e94e"
+      },
+      {
+        "sha": "a1bde15fb4d28adb9c124d60223e5473ea332a41",
+        "url": "https://api.github.com/repos/apple/swift/commits/a1bde15fb4d28adb9c124d60223e5473ea332a41",
+        "html_url": "https://github.com/apple/swift/commit/a1bde15fb4d28adb9c124d60223e5473ea332a41"
+      }
+    ]
+  },
+  {
+    "sha": "54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6NTRiODhiZjE1OTViYWE5ZWFkNGEyMGVhODFjMDA4Yzg4MWI1ZTk0ZQ==",
+    "commit": {
+      "author": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T16:23:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T16:23:40Z"
+      },
+      "message": "Merge pull request #38872 from hborla/requires-executable\n\n[Test] Mark sr14240-symbol-in-ir-file-not-tbd-file.swift to require an executable test.",
+      "tree": {
+        "sha": "410b51529c5cb3a9724ccaead8dfda2978858203",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/410b51529c5cb3a9724ccaead8dfda2978858203"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFpyMCRBK7hj4Ov3rIwAAiiQIAGZxPpQ558il1/Rnl2kKJzgI\nLHLp7UWf60+2A/FmhJUNWjUGwoVMuw5o6wjJUzLNpTl1A5AfTUQsItStSSoFKuO3\nZaif0vcGNMu5SSfBzrZLMSnglFoInoI22xdQsP8hgEzwRfPsBGUI+FGIhDHkMA3k\nuxe14luSTEClhgGZOG4UPqSIUSXSjgMOEZ+MDcWnAEM8vmhesxq/pKtuYrZFrz/2\ncLeF7vyqyrFrYBFJBE0ht+zB+8Od5KG8AV0Hb3sJ/nmSlV7L3bhr867AoskC4XYt\nTMMmxnqCvCyVzb6YHCmQmypcPBjZvPxE0ZX+3EqLLidSX6901ExcLMLboL3H0eE=\n=2vBV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 410b51529c5cb3a9724ccaead8dfda2978858203\nparent 86c72453da31e1faef76f9dafff88f3482597400\nparent 71cbd2475037befe918fd32c8cfa6a9e1ea917ca\nauthor Holly Borla <hborla@apple.com> 1628871820 -0700\ncommitter GitHub <noreply@github.com> 1628871820 -0700\n\nMerge pull request #38872 from hborla/requires-executable\n\n[Test] Mark sr14240-symbol-in-ir-file-not-tbd-file.swift to require an executable test."
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+    "html_url": "https://github.com/apple/swift/commit/54b88bf1595baa9ead4a20ea81c008c881b5e94e",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/54b88bf1595baa9ead4a20ea81c008c881b5e94e/comments",
+    "author": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86c72453da31e1faef76f9dafff88f3482597400",
+        "url": "https://api.github.com/repos/apple/swift/commits/86c72453da31e1faef76f9dafff88f3482597400",
+        "html_url": "https://github.com/apple/swift/commit/86c72453da31e1faef76f9dafff88f3482597400"
+      },
+      {
+        "sha": "71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+        "url": "https://api.github.com/repos/apple/swift/commits/71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+        "html_url": "https://github.com/apple/swift/commit/71cbd2475037befe918fd32c8cfa6a9e1ea917ca"
+      }
+    ]
+  },
+  {
+    "sha": "71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6NzFjYmQyNDc1MDM3YmVmZTkxOGZkMzJjOGNmYTZhOWUxZWE5MTdjYQ==",
+    "commit": {
+      "author": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T16:11:20Z"
+      },
+      "committer": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T16:11:20Z"
+      },
+      "message": "[Test] Mark sr14240-symbol-in-ir-file-not-tbd-file.swift to require\nan executable test.",
+      "tree": {
+        "sha": "410b51529c5cb3a9724ccaead8dfda2978858203",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/410b51529c5cb3a9724ccaead8dfda2978858203"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+    "html_url": "https://github.com/apple/swift/commit/71cbd2475037befe918fd32c8cfa6a9e1ea917ca",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/71cbd2475037befe918fd32c8cfa6a9e1ea917ca/comments",
+    "author": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86c72453da31e1faef76f9dafff88f3482597400",
+        "url": "https://api.github.com/repos/apple/swift/commits/86c72453da31e1faef76f9dafff88f3482597400",
+        "html_url": "https://github.com/apple/swift/commit/86c72453da31e1faef76f9dafff88f3482597400"
+      }
+    ]
+  },
+  {
+    "sha": "3afb498896a75f066ee97b4d471a0d4a6d623420",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6M2FmYjQ5ODg5NmE3NWYwNjZlZTk3YjRkNDcxYTBkNGE2ZDYyMzQyMA==",
+    "commit": {
+      "author": {
+        "name": "Ben Barham",
+        "email": "ben_barham@apple.com",
+        "date": "2021-08-13T05:43:16Z"
+      },
+      "committer": {
+        "name": "Ben Barham",
+        "email": "ben_barham@apple.com",
+        "date": "2021-08-13T07:15:21Z"
+      },
+      "message": "[Deserialization] Do not assert on a missing witness if allowing errors\n\nWhen allowing errors we may have serialized a requirement without a\nwitness, do not assert when deserializing.\n\nResolves rdar://81884767",
+      "tree": {
+        "sha": "3339a83d753995f8c438d2b9cd04ae1853b7f617",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/3339a83d753995f8c438d2b9cd04ae1853b7f617"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/3afb498896a75f066ee97b4d471a0d4a6d623420",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/3afb498896a75f066ee97b4d471a0d4a6d623420",
+    "html_url": "https://github.com/apple/swift/commit/3afb498896a75f066ee97b4d471a0d4a6d623420",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/3afb498896a75f066ee97b4d471a0d4a6d623420/comments",
+    "author": {
+      "login": "bnbarham",
+      "id": 1628798,
+      "node_id": "MDQ6VXNlcjE2Mjg3OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1628798?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnbarham",
+      "html_url": "https://github.com/bnbarham",
+      "followers_url": "https://api.github.com/users/bnbarham/followers",
+      "following_url": "https://api.github.com/users/bnbarham/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bnbarham/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bnbarham/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bnbarham/subscriptions",
+      "organizations_url": "https://api.github.com/users/bnbarham/orgs",
+      "repos_url": "https://api.github.com/users/bnbarham/repos",
+      "events_url": "https://api.github.com/users/bnbarham/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bnbarham/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "bnbarham",
+      "id": 1628798,
+      "node_id": "MDQ6VXNlcjE2Mjg3OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1628798?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnbarham",
+      "html_url": "https://github.com/bnbarham",
+      "followers_url": "https://api.github.com/users/bnbarham/followers",
+      "following_url": "https://api.github.com/users/bnbarham/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bnbarham/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bnbarham/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bnbarham/subscriptions",
+      "organizations_url": "https://api.github.com/users/bnbarham/orgs",
+      "repos_url": "https://api.github.com/users/bnbarham/repos",
+      "events_url": "https://api.github.com/users/bnbarham/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bnbarham/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86c72453da31e1faef76f9dafff88f3482597400",
+        "url": "https://api.github.com/repos/apple/swift/commits/86c72453da31e1faef76f9dafff88f3482597400",
+        "html_url": "https://github.com/apple/swift/commit/86c72453da31e1faef76f9dafff88f3482597400"
+      }
+    ]
+  },
+  {
+    "sha": "f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+    "node_id": "MDY6Q29tbWl0NDQ4Mzg5NDk6ZjMwMmMyMGZmMGZlNjMyYzNiYjM3MGE2ZjNiNzY2YjJlY2FkNTc5NA==",
+    "commit": {
+      "author": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T06:20:53Z"
+      },
+      "committer": {
+        "name": "Holly Borla",
+        "email": "hborla@apple.com",
+        "date": "2021-08-13T06:20:53Z"
+      },
+      "message": "[AST] When cloning a parameter list, always set the default argument kind\nto none when default arguments are not inherited.",
+      "tree": {
+        "sha": "4ced6f7f6fdfb3a5488cd2b007ee6e70cdccdd03",
+        "url": "https://api.github.com/repos/apple/swift/git/trees/4ced6f7f6fdfb3a5488cd2b007ee6e70cdccdd03"
+      },
+      "url": "https://api.github.com/repos/apple/swift/git/commits/f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apple/swift/commits/f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+    "html_url": "https://github.com/apple/swift/commit/f302c20ff0fe632c3bb370a6f3b766b2ecad5794",
+    "comments_url": "https://api.github.com/repos/apple/swift/commits/f302c20ff0fe632c3bb370a6f3b766b2ecad5794/comments",
+    "author": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "hborla",
+      "id": 11149819,
+      "node_id": "MDQ6VXNlcjExMTQ5ODE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11149819?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hborla",
+      "html_url": "https://github.com/hborla",
+      "followers_url": "https://api.github.com/users/hborla/followers",
+      "following_url": "https://api.github.com/users/hborla/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hborla/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hborla/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hborla/subscriptions",
+      "organizations_url": "https://api.github.com/users/hborla/orgs",
+      "repos_url": "https://api.github.com/users/hborla/repos",
+      "events_url": "https://api.github.com/users/hborla/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hborla/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "85891c9b9f0c7550554bed3504ecfbfe7b4d28d9",
+        "url": "https://api.github.com/repos/apple/swift/commits/85891c9b9f0c7550554bed3504ecfbfe7b4d28d9",
+        "html_url": "https://github.com/apple/swift/commit/85891c9b9f0c7550554bed3504ecfbfe7b4d28d9"
+      }
+    ]
+  }
+]

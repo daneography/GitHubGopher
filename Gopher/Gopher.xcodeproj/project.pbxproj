@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5BB18B26C9901C002840DB /* commitsSample.json in Resources */ = {isa = PBXBuildFile; fileRef = AC5BB18A26C9901C002840DB /* commitsSample.json */; };
+		AC5BB18D26C9903F002840DB /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18C26C9903F002840DB /* Commit.swift */; };
+		AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18E26C9919A002840DB /* CommitRow.swift */; };
+		AC5BB19126C993D5002840DB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB19026C993D5002840DB /* ModelData.swift */; };
 		AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FD126C624FC0018E2A6 /* GopherApp.swift */; };
 		AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FD326C624FC0018E2A6 /* ContentView.swift */; };
 		AC805FD626C624FD0018E2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC805FD526C624FD0018E2A6 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC5BB18A26C9901C002840DB /* commitsSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = commitsSample.json; sourceTree = "<group>"; };
+		AC5BB18C26C9903F002840DB /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		AC5BB18E26C9919A002840DB /* CommitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitRow.swift; sourceTree = "<group>"; };
+		AC5BB19026C993D5002840DB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AC805FCE26C624FC0018E2A6 /* Gopher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gopher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC805FD126C624FC0018E2A6 /* GopherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GopherApp.swift; sourceTree = "<group>"; };
 		AC805FD326C624FC0018E2A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5BB19226C99582002840DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC805FD326C624FC0018E2A6 /* ContentView.swift */,
+				AC5BB18E26C9919A002840DB /* CommitRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC5BB19326C99593002840DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BB19026C993D5002840DB /* ModelData.swift */,
+				AC5BB18C26C9903F002840DB /* Commit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC5BB19426C995A9002840DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC5BB18A26C9901C002840DB /* commitsSample.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AC805FC526C624FC0018E2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				AC805FD126C624FC0018E2A6 /* GopherApp.swift */,
-				AC805FD326C624FC0018E2A6 /* ContentView.swift */,
+				AC5BB19226C99582002840DB /* Views */,
+				AC5BB19326C99593002840DB /* Model */,
+				AC5BB19426C995A9002840DB /* Resources */,
 				AC805FD526C624FD0018E2A6 /* Assets.xcassets */,
 				AC805FDA26C624FD0018E2A6 /* Info.plist */,
 				AC805FD726C624FD0018E2A6 /* Preview Content */,
@@ -233,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5BB18B26C9901C002840DB /* commitsSample.json in Resources */,
 				AC805FD926C624FD0018E2A6 /* Preview Assets.xcassets in Resources */,
 				AC805FD626C624FD0018E2A6 /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */,
+				AC5BB18D26C9903F002840DB /* Commit.swift in Sources */,
+				AC5BB19126C993D5002840DB /* ModelData.swift in Sources */,
 				AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */,
+				AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
