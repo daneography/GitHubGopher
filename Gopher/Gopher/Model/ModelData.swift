@@ -15,7 +15,7 @@ class apiCall {
         
         URLSession.shared.dataTask(with: url) {
             (data, _, _) in
-            let commits = try! JSONDecoder().decode([Repo].self from: data!)
+            let commits = try! JSONDecoder().decode([Repo].self, from: data!)
             print(commits)
             
             DispatchQueue.main.async {

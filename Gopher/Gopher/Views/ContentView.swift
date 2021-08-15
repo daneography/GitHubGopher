@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text: String = ""
-    @State var commits = [Commit]()
+    @State var commits = [Repo]()
     
     var body: some View {
         VStack {
@@ -40,9 +40,11 @@ struct ContentView: View {
         }
         NavigationView{
             List(commits) { commit in
-                Text(commit.authorName)
-                Text(commit.sha)
-                Text(commit.message)
+                VStack() {
+                    Text(commit.commit.author.name)
+                    Text(commit.sha)
+                    Text(commit.commit.message)
+                }
             }
         }
         .onAppear(){
