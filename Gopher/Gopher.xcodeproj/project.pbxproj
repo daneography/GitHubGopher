@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC5BB18D26C9903F002840DB /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18C26C9903F002840DB /* Commit.swift */; };
+		AC5BB18D26C9903F002840DB /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18C26C9903F002840DB /* Repo.swift */; };
 		AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18E26C9919A002840DB /* CommitRow.swift */; };
 		AC5BB19126C993D5002840DB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB19026C993D5002840DB /* ModelData.swift */; };
 		AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC805FD126C624FC0018E2A6 /* GopherApp.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC5BB18C26C9903F002840DB /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		AC5BB18C26C9903F002840DB /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		AC5BB18E26C9919A002840DB /* CommitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitRow.swift; sourceTree = "<group>"; };
 		AC5BB19026C993D5002840DB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AC805FCE26C624FC0018E2A6 /* Gopher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gopher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5BB19026C993D5002840DB /* ModelData.swift */,
-				AC5BB18C26C9903F002840DB /* Commit.swift */,
+				AC5BB18C26C9903F002840DB /* Repo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */,
-				AC5BB18D26C9903F002840DB /* Commit.swift in Sources */,
+				AC5BB18D26C9903F002840DB /* Repo.swift in Sources */,
 				AC5BB19126C993D5002840DB /* ModelData.swift in Sources */,
 				AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */,
 				AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */,
