@@ -10,34 +10,46 @@ import SwiftUI
 struct ContentView: View {
     
     @State var text: String = ""
-    @State private var multiSelection = Set<UUID>()
+    @State var commits = [Commit]()
     
     var body: some View {
-        VStack {
-            VStack(alignment: .center) {
-                Text("Hello, this is GitHubGopher")
-                    .font(.title)
-                Text("I talk to GitHub API and show you stuff.")
-                    .font(.subheadline)
-                
-                TextField("Type in Repository", text: $text)
-                    .padding(10)
-                    .border(Color.black, width: 0.5)
+//        VStack {
+//            VStack(alignment: .center) {
+//                Text("Hello, this is GitHubGopher")
+//                    .font(.title)
+//                Text("I talk to GitHub API and show you stuff.")
+//                    .font(.subheadline)
+//                
+//                TextField("Type in Repository", text: $text)
+//                    .padding(10)
+//                    .border(Color.black, width: 0.5)
+//            }
+//            .padding()
+//            
+//            
+//            Button(action: {
+//                print(text)
+//            }) {
+//                Text("Search")
+//                    .padding(10)
+//                    .background(Color.blue)
+//                    .foregroundColor(.white)
+//                    .cornerRadius(10)
+//            }
+//            
+//        }
+        NavigationView{
+            List(commits) { commit in
+//                Text(commit.authorName)
+                Text(commit.sha)
+//                Text(commit.message)
             }
-            .padding()
-            
-            
-            Button(action: {
-                print(text)
-            }) {
-                Text("Search")
-                    .padding(10)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            
         }
+        .onAppear(){
+            apiCall().getGitHubCommits{ (commits) in
+                self.commits = commits
+            }
+        }.navigationTitle("Commits")
         
     }
 }
@@ -47,18 +59,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-struct Ocean: Identifiable{
-    let name: String
-    let id = UUID()
-}
-
-private var oceans = [
-    Ocean(name: "Pacific"),
-    Ocean(name: "Atlantic"),
-    Ocean(name: "Indian"),
-    Ocean(name: "Southern"),
-    Ocean(name: "Arctic")
-]
 
 
