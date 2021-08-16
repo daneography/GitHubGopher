@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CommitDetails: View {
+    var commit: Repo
+    
     var body: some View{
         VStack(alignment: .leading){
-            Text("Hash: ABC123")
+            Text(commit.sha)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            Text("By: Jon Dow")
+            Text(commit.commit.author.name)
                 .font(.subheadline)
-            Text("Lorem Ipsum")
+            Text(commit.commit.message)
                 .font(.body)
             
         }
@@ -23,6 +25,6 @@ struct CommitDetails: View {
 
 struct CommitDetails_Previews: PreviewProvider {
     static var previews: some View {
-        CommitDetails()
+        CommitDetails(commit: repository[0])
     }
 }

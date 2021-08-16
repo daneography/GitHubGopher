@@ -11,7 +11,7 @@ struct CommitList: View{
     var body: some View{
         NavigationView {
             List(repository){ Repo in
-                NavigationLink(destination: CommitDetails()){
+                NavigationLink(destination: CommitDetails(commit: Repo)){
                     CommitRow(commit: Repo)
                 }
             }.navigationTitle("Commits")
