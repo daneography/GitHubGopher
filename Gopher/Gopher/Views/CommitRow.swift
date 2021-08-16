@@ -26,13 +26,13 @@ struct CommitRow: View{
         }
     }
 
-struct CommitRow_Previews: PreviewProvider{
-    static var previews: some View {
-        Group{
-            CommitRow(commit: repository[0])
-        }
-    }
-}
+//struct CommitRow_Previews: PreviewProvider{
+//    static var previews: some View {
+//        Group{
+//            CommitRow(commit: repository[0])
+//        }
+//    }
+//}
 
 
 

@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct CommitDetails: View {
-    var commit: Repo
-    
-    var body: some View{
-        VStack(alignment: .leading){
-            Text(commit.sha)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            Text("By \(commit.commit.author.name)")
-                .font(.headline)
-            Divider()
-            Text(commit.commit.message)
-                .font(.body)
-            Spacer()
-        }.padding()
-    }
-}
-
-struct CommitDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        CommitDetails(commit: repository[0])
-    }
-}
+//struct CommitDetails: View {
+//    var commit: Repo
+//    
+//    var body: some View{
+//        VStack(alignment: .leading){
+//            Text(commit.sha)
+//                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//            Text("By \(commit.commit.author.name)")
+//                .font(.headline)
+//            Divider()
+//            Text(commit.commit.message)
+//                .font(.body)
+//            Spacer()
+//        }.padding()
+//    }
+//}
+//
+//struct CommitDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CommitDetails()
+//    }
+//}
