@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CommitList: View{
     var body: some View{
-        List(repository, id: \.id){ Repo in
+        List(repository){ Repo in
             CommitRow(commit: Repo)
         }
     }
