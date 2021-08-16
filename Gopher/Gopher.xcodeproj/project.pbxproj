@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC13799D26C9DE1C00305750 /* commitsSample.json in Resources */ = {isa = PBXBuildFile; fileRef = AC13799C26C9DE1C00305750 /* commitsSample.json */; };
+		AC1379A026C9EA1300305750 /* CommitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13799F26C9EA1300305750 /* CommitList.swift */; };
 		AC5BB18D26C9903F002840DB /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18C26C9903F002840DB /* Repo.swift */; };
 		AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18E26C9919A002840DB /* CommitRow.swift */; };
 		AC5BB19126C993D5002840DB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB19026C993D5002840DB /* ModelData.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC13799C26C9DE1C00305750 /* commitsSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = commitsSample.json; sourceTree = "<group>"; };
+		AC13799F26C9EA1300305750 /* CommitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitList.swift; sourceTree = "<group>"; };
 		AC5BB18C26C9903F002840DB /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		AC5BB18E26C9919A002840DB /* CommitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitRow.swift; sourceTree = "<group>"; };
 		AC5BB19026C993D5002840DB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -78,11 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC13799E26C9DE2400305750 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC13799C26C9DE1C00305750 /* commitsSample.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AC5BB19226C99582002840DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				AC805FD326C624FC0018E2A6 /* ContentView.swift */,
 				AC5BB18E26C9919A002840DB /* CommitRow.swift */,
+				AC13799F26C9EA1300305750 /* CommitList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 				AC5BB19226C99582002840DB /* Views */,
 				AC5BB19326C99593002840DB /* Model */,
 				AC805FD526C624FD0018E2A6 /* Assets.xcassets */,
+				AC13799E26C9DE2400305750 /* Resources */,
 				AC805FDA26C624FD0018E2A6 /* Info.plist */,
 				AC805FD726C624FD0018E2A6 /* Preview Content */,
 			);
@@ -258,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC13799D26C9DE1C00305750 /* commitsSample.json in Resources */,
 				AC805FD926C624FD0018E2A6 /* Preview Assets.xcassets in Resources */,
 				AC805FD626C624FD0018E2A6 /* Assets.xcassets in Resources */,
 			);
@@ -284,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1379A026C9EA1300305750 /* CommitList.swift in Sources */,
 				AC805FD426C624FC0018E2A6 /* ContentView.swift in Sources */,
 				AC5BB18D26C9903F002840DB /* Repo.swift in Sources */,
 				AC5BB19126C993D5002840DB /* ModelData.swift in Sources */,

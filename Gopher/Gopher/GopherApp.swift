@@ -11,7 +11,7 @@ import SwiftUI
 struct GopherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CommitList()
         }
     }
 }

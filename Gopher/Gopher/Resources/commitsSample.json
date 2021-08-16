@@ -1,0 +1,1977 @@
+[
+  {
+    "sha": "d009cea391414bfef17520ba6b64e4c2d97163ed",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6ZDAwOWNlYTM5MTQxNGJmZWYxNzUyMGJhNmI2NGU0YzJkOTcxNjNlZA==",
+    "commit": {
+      "author": {
+        "name": "imp",
+        "email": "imp07@qq.com",
+        "date": "2021-08-15T19:15:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-15T19:15:53Z"
+      },
+      "message": "Fix mypy error at maths (#4613)\n\n* Fix mypy errors for maths/greedy_coin_change.py\r\n\r\n* Fix mypy errors for maths/two_sum.py\r\n\r\n* Fix mypy errors for maths/triplet_sum.py\r\n\r\n* Fix the format of maths/greedy_coin_change.py\r\n\r\n* Fix the format of maths/greedy_coin_change.py\r\n\r\n* Fix format with pre-commit",
+      "tree": {
+        "sha": "83d4ee942c0e89112f1d1d244af64dd2b667a3e3",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/83d4ee942c0e89112f1d1d244af64dd2b667a3e3"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/d009cea391414bfef17520ba6b64e4c2d97163ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhGWfpCRBK7hj4Ov3rIwAAQPsIABvsKXkhPix4L7DWdanl3A7s\nR2xGW91C/KdVy1oqqMrdoppBbW5PKEaND4QHcwTqqONvr0EZu95j69ucIbCA/NGp\nzrChyTENj/uX+QN9nK7399+fd8SZNuUYQISZJ4n4B4Ve3kBCPhZcwjjtpMlnvdyy\nUMkI04V00WYSr8qoKfloEt+TZ0+s3htLAebMSXU53QdtlTbYDEqatObYgnWkKMG9\nNhEFVTjRMpbYuEO0RkBdcQHmJScnq7heCcTailNnzyKXQNQBSi9gLWI2q+l2eq5z\n6vGNbxcmCZxS5xvY7tqtadnCqqUarF4ad0FydzwsPGdR9ev0S/NeGfbUwROeono=\n=9E2u\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 83d4ee942c0e89112f1d1d244af64dd2b667a3e3\nparent 032999f36ed6eef61752e6bc5e399020988b06bd\nauthor imp <imp07@qq.com> 1629054953 +0800\ncommitter GitHub <noreply@github.com> 1629054953 +0200\n\nFix mypy error at maths (#4613)\n\n* Fix mypy errors for maths/greedy_coin_change.py\r\n\r\n* Fix mypy errors for maths/two_sum.py\r\n\r\n* Fix mypy errors for maths/triplet_sum.py\r\n\r\n* Fix the format of maths/greedy_coin_change.py\r\n\r\n* Fix the format of maths/greedy_coin_change.py\r\n\r\n* Fix format with pre-commit"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/d009cea391414bfef17520ba6b64e4c2d97163ed",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/d009cea391414bfef17520ba6b64e4c2d97163ed",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/d009cea391414bfef17520ba6b64e4c2d97163ed/comments",
+    "author": {
+      "login": "imp2002",
+      "id": 41513919,
+      "node_id": "MDQ6VXNlcjQxNTEzOTE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41513919?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/imp2002",
+      "html_url": "https://github.com/imp2002",
+      "followers_url": "https://api.github.com/users/imp2002/followers",
+      "following_url": "https://api.github.com/users/imp2002/following{/other_user}",
+      "gists_url": "https://api.github.com/users/imp2002/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/imp2002/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/imp2002/subscriptions",
+      "organizations_url": "https://api.github.com/users/imp2002/orgs",
+      "repos_url": "https://api.github.com/users/imp2002/repos",
+      "events_url": "https://api.github.com/users/imp2002/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/imp2002/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "032999f36ed6eef61752e6bc5e399020988b06bd",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/032999f36ed6eef61752e6bc5e399020988b06bd",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/032999f36ed6eef61752e6bc5e399020988b06bd"
+      }
+    ]
+  },
+  {
+    "sha": "032999f36ed6eef61752e6bc5e399020988b06bd",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6MDMyOTk5ZjM2ZWQ2ZWVmNjE3NTJlNmJjNWUzOTkwMjA5ODhiMDZiZA==",
+    "commit": {
+      "author": {
+        "name": "Bonnie",
+        "email": "58572137+bonbon99@users.noreply.github.com",
+        "date": "2021-08-15T05:43:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-15T05:43:05Z"
+      },
+      "message": "Create exchange_sort.py (#4600)\n\n* Create exchange_sort.py\r\n\r\nadded exchange sort\r\n\r\n* Fixed doctest in exchange_sort.py\r\n\r\n* Fixed formatting error and added new length variable\r\n\r\nadded empty line at end of exchange_sort.py and turned len(numbers) into a variable\r\n\r\n* Fixed formatting errors with black\r\n\r\nadded empty line",
+      "tree": {
+        "sha": "c5e47e6e2b86bcab489a9eadf61bffe5d29ac5ed",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/c5e47e6e2b86bcab489a9eadf61bffe5d29ac5ed"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/032999f36ed6eef61752e6bc5e399020988b06bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhGKlpCRBK7hj4Ov3rIwAAYdMIAAHaJ+OQxMUF+j8EMrhR5sjg\nwsKnOr61DjECV6iAgNriO3GF+3cAVjE9RrHzO+M8AFhpRmMhaLH5f8GANZT7Mi6G\noUyoUhnyKO5M6ynhQaZC/gHJQjQHBA32G7TbpEFAq4Fcq5O54JsP0l6dP4L3oGJG\n+vOPmY7tz0GHUMOKLbmMoe3eVdtRhx7Yo9eEvCPXS+Wj3Qdly4ZoBIFVKypYdYIl\nYGPZH5UNnFDdGdOsKTIu18Ni4E8OrH/iaLCVN2yWG85VGJkWT95QzZZTM7NfpXOz\nmwpI+n/5F7Bu1HOddb9lQJMc/YE/PzUv53gGlI1Y950UAAIgLUJAG2oevsJDvDg=\n=pbaw\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c5e47e6e2b86bcab489a9eadf61bffe5d29ac5ed\nparent 3c225247b843233a306a94907f862bece6e637dc\nauthor Bonnie <58572137+bonbon99@users.noreply.github.com> 1629006185 -0400\ncommitter GitHub <noreply@github.com> 1629006185 +0200\n\nCreate exchange_sort.py (#4600)\n\n* Create exchange_sort.py\r\n\r\nadded exchange sort\r\n\r\n* Fixed doctest in exchange_sort.py\r\n\r\n* Fixed formatting error and added new length variable\r\n\r\nadded empty line at end of exchange_sort.py and turned len(numbers) into a variable\r\n\r\n* Fixed formatting errors with black\r\n\r\nadded empty line"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/032999f36ed6eef61752e6bc5e399020988b06bd",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/032999f36ed6eef61752e6bc5e399020988b06bd",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/032999f36ed6eef61752e6bc5e399020988b06bd/comments",
+    "author": {
+      "login": "bonbon99",
+      "id": 58572137,
+      "node_id": "MDQ6VXNlcjU4NTcyMTM3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58572137?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bonbon99",
+      "html_url": "https://github.com/bonbon99",
+      "followers_url": "https://api.github.com/users/bonbon99/followers",
+      "following_url": "https://api.github.com/users/bonbon99/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bonbon99/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bonbon99/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bonbon99/subscriptions",
+      "organizations_url": "https://api.github.com/users/bonbon99/orgs",
+      "repos_url": "https://api.github.com/users/bonbon99/repos",
+      "events_url": "https://api.github.com/users/bonbon99/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bonbon99/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3c225247b843233a306a94907f862bece6e637dc",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/3c225247b843233a306a94907f862bece6e637dc",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/3c225247b843233a306a94907f862bece6e637dc"
+      }
+    ]
+  },
+  {
+    "sha": "3c225247b843233a306a94907f862bece6e637dc",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6M2MyMjUyNDdiODQzMjMzYTMwNmE5NDkwN2Y4NjJiZWNlNmU2MzdkYw==",
+    "commit": {
+      "author": {
+        "name": "Shubham Ganar",
+        "email": "67952129+shubhamsg199@users.noreply.github.com",
+        "date": "2021-08-13T07:10:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T07:10:52Z"
+      },
+      "message": "[mypy] Fix type annotations for strings/naive_string_search.py (#4611)",
+      "tree": {
+        "sha": "b7f1b96b1e43a73e25521760cd095190d61a0a54",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/b7f1b96b1e43a73e25521760cd095190d61a0a54"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/3c225247b843233a306a94907f862bece6e637dc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFhr8CRBK7hj4Ov3rIwAA2FEIAD5ZY0/L9kJ5wivQbr/WiyQy\nde//Pw+yEyMzHf/IFGJ6uOKHANjU2Ns3NVj3NqZ6+K+bQQ6n7RruLK+UIAeHwD9j\nCOoZ/lJXzFcjk0I6BhHSLn20Rw9LvSwglEkXBuciwh1pwd5PQnGaM+h3N1ZsmAsZ\n5DFCKK0V+mqLsIgPr+CA4ytsnKFv7iH1KHb7zTECPcQ8CT+eF3NNNW3TN3+DW4e/\nK1gdd+oNGzj0g134pr6kPkySKiuR3T5kOv85LBczRDRkh/Se3toKnPwJBDguOOeE\nSyh0Lwll8E/FYMrxPxOHcA5gBhUc21XY7nnczwgX2g/Td6gWoVh9pgi2LPmQWlU=\n=wX+E\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b7f1b96b1e43a73e25521760cd095190d61a0a54\nparent cd987372e4c3a9f87d65b757ab46a48527fc9fa9\nauthor Shubham Ganar <67952129+shubhamsg199@users.noreply.github.com> 1628838652 +0530\ncommitter GitHub <noreply@github.com> 1628838652 +0200\n\n[mypy] Fix type annotations for strings/naive_string_search.py (#4611)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/3c225247b843233a306a94907f862bece6e637dc",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/3c225247b843233a306a94907f862bece6e637dc",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/3c225247b843233a306a94907f862bece6e637dc/comments",
+    "author": {
+      "login": "shubhamsg199",
+      "id": 67952129,
+      "node_id": "MDQ6VXNlcjY3OTUyMTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67952129?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shubhamsg199",
+      "html_url": "https://github.com/shubhamsg199",
+      "followers_url": "https://api.github.com/users/shubhamsg199/followers",
+      "following_url": "https://api.github.com/users/shubhamsg199/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shubhamsg199/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shubhamsg199/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shubhamsg199/subscriptions",
+      "organizations_url": "https://api.github.com/users/shubhamsg199/orgs",
+      "repos_url": "https://api.github.com/users/shubhamsg199/repos",
+      "events_url": "https://api.github.com/users/shubhamsg199/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shubhamsg199/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/cd987372e4c3a9f87d65b757ab46a48527fc9fa9"
+      }
+    ]
+  },
+  {
+    "sha": "cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6Y2Q5ODczNzJlNGMzYTlmODdkNjViNzU3YWI0NmE0ODUyN2ZjOWZhOQ==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-08-13T07:10:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-13T07:10:24Z"
+      },
+      "message": "Fix multi heuristic astar algo (#4612)",
+      "tree": {
+        "sha": "47bf9ebb09b6a178d7db850d51fcdfae93909b48",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/47bf9ebb09b6a178d7db850d51fcdfae93909b48"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFhrhCRBK7hj4Ov3rIwAAO0wIAHSWy5BP/hqLIwTwOR63tMoR\n3+aTfn/kOKpevksHaVZnKo399X1SEguYIX+FXVldKlmoVf+5mzdSJAfvri+BmZHZ\nbZQoLmTytC6ngztKfUvH6MOEkJv40OJjqor30ToYXvmPcE3sQB1h5ifciB5KstTP\nWTkYxhJzQbOEjqDuyuYt35swpIH4a/X+2cla2LyXmx2rIWORnhOYRcVXgvx76Db7\nzv7wLLaB+LxTpT02OhKyDWrhWdZ2VmS/nAmCVnEe4N/HqHtrkt6eVrjVg7I3xPfk\n3yI3Fum1XLGh7BTAqqU/ZoiTQ87+jLjGeGhp8xUKO4nlkkA3wtL05NzRMH4ykY0=\n=5wkm\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 47bf9ebb09b6a178d7db850d51fcdfae93909b48\nparent d668c172b07bf9f54d63dc295016a96ec782a541\nauthor Hasanul Islam <hasanuli10@gmail.com> 1628838624 +0600\ncommitter GitHub <noreply@github.com> 1628838624 +0200\n\nFix multi heuristic astar algo (#4612)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/cd987372e4c3a9f87d65b757ab46a48527fc9fa9",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/cd987372e4c3a9f87d65b757ab46a48527fc9fa9/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d668c172b07bf9f54d63dc295016a96ec782a541",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/d668c172b07bf9f54d63dc295016a96ec782a541",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/d668c172b07bf9f54d63dc295016a96ec782a541"
+      }
+    ]
+  },
+  {
+    "sha": "d668c172b07bf9f54d63dc295016a96ec782a541",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6ZDY2OGMxNzJiMDdiZjlmNTRkNjNkYzI5NTAxNmE5NmVjNzgyYTU0MQ==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-08-11T20:48:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-11T20:48:53Z"
+      },
+      "message": "Refactor graph_initialization at basic_graph.py (#4601)",
+      "tree": {
+        "sha": "944f7cf59fe10cc49cf09f61c30c66e49582916b",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/944f7cf59fe10cc49cf09f61c30c66e49582916b"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/d668c172b07bf9f54d63dc295016a96ec782a541",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFDe1CRBK7hj4Ov3rIwAAn84IAIPLb/JKOYOadHsSRlKvgtA9\nS3gAZaMxOVKNVIpoi/Gv2rYxxWletrQyRRuNypgYptugaETrAom3ZEzn1DFIQ8b0\nZyYQzaTjL1iEAavqjId4gH8NF+U0jpEbklDNPISVgMhplbUXeZ3ZPovIMKoYun2N\n1GwxeAGn79LY0Nl7zGt5FR0GxIxVVwmJnRCt8si2EjLmNrzFReqiWH8+LbJQZvOz\nFWR84JyeaKzDdDdNO3P+BD4cNSI1jEDZqscakJjelBfExnYlFHguVU3JBgiNo+EO\nGik3np68ubwuw+MWZCT5v5qAbz7JHMky/i7YJeQuVLZX92qMhgBoK4Q+yM0wUzQ=\n=ErSG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 944f7cf59fe10cc49cf09f61c30c66e49582916b\nparent 63ac09eeae6805ae25a3f994cb18e5df254ba4b6\nauthor Hasanul Islam <hasanuli10@gmail.com> 1628714933 +0600\ncommitter GitHub <noreply@github.com> 1628714933 +0200\n\nRefactor graph_initialization at basic_graph.py (#4601)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/d668c172b07bf9f54d63dc295016a96ec782a541",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/d668c172b07bf9f54d63dc295016a96ec782a541",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/d668c172b07bf9f54d63dc295016a96ec782a541/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/63ac09eeae6805ae25a3f994cb18e5df254ba4b6"
+      }
+    ]
+  },
+  {
+    "sha": "63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NjNhYzA5ZWVhZTY4MDVhZTI1YTNmOTk0Y2IxOGU1ZGYyNTRiYTRiNg==",
+    "commit": {
+      "author": {
+        "name": "Shubham Ganar",
+        "email": "67952129+shubhamsg199@users.noreply.github.com",
+        "date": "2021-08-08T18:21:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-08T18:21:26Z"
+      },
+      "message": "Created check_valid_ip_address.py (#4602)\n\n* Created check_valid_ip_address.py\r\n\r\n* fixed typos error\r\n\r\nCo-authored-by: root <root@localhost.localdomain>",
+      "tree": {
+        "sha": "c5b1e0824760d5a886d334619fe7b5ac7cfb5661",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/c5b1e0824760d5a886d334619fe7b5ac7cfb5661"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+      "comment_count": 1,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhECCmCRBK7hj4Ov3rIwAArYYIAJbAch36ABVuLTOMigpf6c+c\nuYXw5auhmjFEnGzdqdnEackHOVKllU9Quwh7esg1bLzvjpmLGZ3lc/RocsjKEJh8\n5t/4p9+Zzi6t5udR3KZjDivYTGanBe9ldq7i4FTXSwbvbB/gOfZfmrYtAUeSBctk\nvfyafAz51W/ULuJRr6HOz9cV22baQ3lUqYRZMH9sMPANNZz4pCptRR4yfEUwISf7\ny3uI3AaHYuKyx1BCfoJJNSrn+f2gQ2shzl5v0ZKTQKtTxmrvKTDxDKkARtPRTnmT\nKj+PdDekO0K3ZhXZ/mDzGCZWtH3a96u6+raQ8FmgtFJ9dbBbxGM57tJFMznGnig=\n=3h8j\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c5b1e0824760d5a886d334619fe7b5ac7cfb5661\nparent f432bc76a6a8851b8bd2f29a45761a4ec538561f\nauthor Shubham Ganar <67952129+shubhamsg199@users.noreply.github.com> 1628446886 +0530\ncommitter GitHub <noreply@github.com> 1628446886 +0200\n\nCreated check_valid_ip_address.py (#4602)\n\n* Created check_valid_ip_address.py\r\n\r\n* fixed typos error\r\n\r\nCo-authored-by: root <root@localhost.localdomain>"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/63ac09eeae6805ae25a3f994cb18e5df254ba4b6",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/63ac09eeae6805ae25a3f994cb18e5df254ba4b6/comments",
+    "author": {
+      "login": "shubhamsg199",
+      "id": 67952129,
+      "node_id": "MDQ6VXNlcjY3OTUyMTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67952129?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shubhamsg199",
+      "html_url": "https://github.com/shubhamsg199",
+      "followers_url": "https://api.github.com/users/shubhamsg199/followers",
+      "following_url": "https://api.github.com/users/shubhamsg199/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shubhamsg199/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shubhamsg199/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shubhamsg199/subscriptions",
+      "organizations_url": "https://api.github.com/users/shubhamsg199/orgs",
+      "repos_url": "https://api.github.com/users/shubhamsg199/repos",
+      "events_url": "https://api.github.com/users/shubhamsg199/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shubhamsg199/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/f432bc76a6a8851b8bd2f29a45761a4ec538561f"
+      }
+    ]
+  },
+  {
+    "sha": "f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6ZjQzMmJjNzZhNmE4ODUxYjhiZDJmMjlhNDU3NjFhNGVjNTM4NTYxZg==",
+    "commit": {
+      "author": {
+        "name": "SURYAPRATAP SINGH SURYAVANSHI",
+        "email": "67123991+suryapratapsinghsuryavanshi@users.noreply.github.com",
+        "date": "2021-08-06T10:15:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-06T10:15:42Z"
+      },
+      "message": "add alternative_string_arrange method (#4595)\n\n* add alternative_string_arrange method\r\n\r\n* fix issue\r\n\r\n* fix one more issue\r\n\r\n* changed the variable name li to output_list",
+      "tree": {
+        "sha": "d89aa47d8d44fe00310af6455122d100cf9af0e3",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/d89aa47d8d44fe00310af6455122d100cf9af0e3"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhDQvOCRBK7hj4Ov3rIwAAEywIABjuqeMDMn+dYvcCDuE0zPr+\nrbplpEhxp4CeFMltIZ6kZ4atdNSveNunyK9UfbKG2Us6LqO/gpKmmyL+Sgx/gitR\nJ98rnO2HsUYUin+Gdu5L9h/jfFGjpko6N4ggowKChxz2VgB1x7diDAWwlOcRJ+QI\nNiIVkndkwfN2YJVT55u1xB4JxLfUv1iX+oxeQWsyQvwDLYmQ5ob8vNeZGAOBs2xX\nVJegSvuNNaoG7+pfkAA59n6RZefp52cGK/ie7w13wwIt1bKs/FUpJY6EmNnbjAed\nFyIuAf4ZteG8Sm/pZHLNu8fQ8N/YzAFJLVBRWl828eBZCL4Nho6i5ouuzU+BsZ8=\n=nNdq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d89aa47d8d44fe00310af6455122d100cf9af0e3\nparent 5957eabd3e0c92650dba0962779b8729d2875209\nauthor SURYAPRATAP SINGH SURYAVANSHI <67123991+suryapratapsinghsuryavanshi@users.noreply.github.com> 1628244942 +0530\ncommitter GitHub <noreply@github.com> 1628244942 +0200\n\nadd alternative_string_arrange method (#4595)\n\n* add alternative_string_arrange method\r\n\r\n* fix issue\r\n\r\n* fix one more issue\r\n\r\n* changed the variable name li to output_list"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/f432bc76a6a8851b8bd2f29a45761a4ec538561f",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/f432bc76a6a8851b8bd2f29a45761a4ec538561f/comments",
+    "author": {
+      "login": "suryapratapsinghsuryavanshi",
+      "id": 67123991,
+      "node_id": "MDQ6VXNlcjY3MTIzOTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67123991?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/suryapratapsinghsuryavanshi",
+      "html_url": "https://github.com/suryapratapsinghsuryavanshi",
+      "followers_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/followers",
+      "following_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/subscriptions",
+      "organizations_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/orgs",
+      "repos_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/repos",
+      "events_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5957eabd3e0c92650dba0962779b8729d2875209",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/5957eabd3e0c92650dba0962779b8729d2875209",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/5957eabd3e0c92650dba0962779b8729d2875209"
+      }
+    ]
+  },
+  {
+    "sha": "5957eabd3e0c92650dba0962779b8729d2875209",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NTk1N2VhYmQzZTBjOTI2NTBkYmEwOTYyNzc5Yjg3MjlkMjg3NTIwOQ==",
+    "commit": {
+      "author": {
+        "name": "jonabtc",
+        "email": "39396756+jonabtc@users.noreply.github.com",
+        "date": "2021-08-03T06:03:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-03T06:03:22Z"
+      },
+      "message": " Adding the double factorial algorithm (#4550)",
+      "tree": {
+        "sha": "ca73c0cff79c60a8c24ccfcf09d99d071b51c22a",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/ca73c0cff79c60a8c24ccfcf09d99d071b51c22a"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/5957eabd3e0c92650dba0962779b8729d2875209",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhCNwqCRBK7hj4Ov3rIwAA1r0IACoWYlg5VmjPo8+c4WaRmTO7\n2s9QfpRlx+X1ELobllIK2IsDZz9UOypElPrtoKgXY00suyNtXZozyuxaeqCW0Zeu\nMc6SvUQs5dnF/7Mftj6HOdb5+l2MjJI+oDCGZtBzVXh637JLvgiLXefD8L4+0rQT\n4TriZ1R6/qOxbNunDL0du47Q6B+XYD0FVNyNGe4jXHMPTeKWkh09p2CWU9bpVyfV\ntDfQefToCafC/ZHmdlInJc4spnyCfJGZ9olFY1bYB78lRKHS5XJa2Y9nFPETt47u\nCaAiiuFHcIgLAtmgnowOkv3llhBkSE9nys8nvuKuORI3zfE1qVL7IerL6xi0vfk=\n=SmPN\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ca73c0cff79c60a8c24ccfcf09d99d071b51c22a\nparent da71184b04837d2bc934f9947b4c262da096f349\nauthor jonabtc <39396756+jonabtc@users.noreply.github.com> 1627970602 -0500\ncommitter GitHub <noreply@github.com> 1627970602 +0200\n\n Adding the double factorial algorithm (#4550)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/5957eabd3e0c92650dba0962779b8729d2875209",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/5957eabd3e0c92650dba0962779b8729d2875209",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/5957eabd3e0c92650dba0962779b8729d2875209/comments",
+    "author": {
+      "login": "jonabtc",
+      "id": 39396756,
+      "node_id": "MDQ6VXNlcjM5Mzk2NzU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39396756?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jonabtc",
+      "html_url": "https://github.com/jonabtc",
+      "followers_url": "https://api.github.com/users/jonabtc/followers",
+      "following_url": "https://api.github.com/users/jonabtc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jonabtc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jonabtc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jonabtc/subscriptions",
+      "organizations_url": "https://api.github.com/users/jonabtc/orgs",
+      "repos_url": "https://api.github.com/users/jonabtc/repos",
+      "events_url": "https://api.github.com/users/jonabtc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jonabtc/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "da71184b04837d2bc934f9947b4c262da096f349",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/da71184b04837d2bc934f9947b4c262da096f349",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/da71184b04837d2bc934f9947b4c262da096f349"
+      }
+    ]
+  },
+  {
+    "sha": "da71184b04837d2bc934f9947b4c262da096f349",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6ZGE3MTE4NGIwNDgzN2QyYmM5MzRmOTk0N2I0YzI2MmRhMDk2ZjM0OQ==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-08-02T12:40:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-02T12:40:48Z"
+      },
+      "message": "Fix mypy errors at mst_kruskal (#4581)",
+      "tree": {
+        "sha": "a8f367055257c65bf2fe59c9b88bc7033fe5b7cf",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/a8f367055257c65bf2fe59c9b88bc7033fe5b7cf"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/da71184b04837d2bc934f9947b4c262da096f349",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhB+fQCRBK7hj4Ov3rIwAAlLgIAEcJvGl1GQdBdpoVLfhi6SuF\ndnnCVUcOo7rQ8x3NcrGo6CnXkc5mZeTt/LVhMIje322Dt5BIk+XxshMkWy8zuYoL\nC5Yo/sc8VDMaGrr9IYo7oQ8TSqlb9mLcFzxPM3KTFRSaggbp5+ZtZJH4U4waU+u9\nSxKb4yH5SYCkYEULR1mwU1UlFTZY9zpnylrJHk8za8LGG4bOyD0R+Loa3evNMvN9\nEL7PpVPEZKxUTRNmM8Ij7E0eN9uxX4y7Zp6CL246tT5tQau8CNXvFQJjdfbOlOXL\nBxbSy6ISmtf7dyGgs4ZoTC1DrCWtEajCipnSmdiU7szrA2pMCXXW0YWsEnKI+9I=\n=yrIo\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a8f367055257c65bf2fe59c9b88bc7033fe5b7cf\nparent a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2\nauthor Hasanul Islam <hasanuli10@gmail.com> 1627908048 +0600\ncommitter GitHub <noreply@github.com> 1627908048 +0200\n\nFix mypy errors at mst_kruskal (#4581)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/da71184b04837d2bc934f9947b4c262da096f349",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/da71184b04837d2bc934f9947b4c262da096f349",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/da71184b04837d2bc934f9947b4c262da096f349/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2"
+      }
+    ]
+  },
+  {
+    "sha": "a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6YTViY2YwZjY3NDlhOTNhNDRmN2E5ODFlZGM5YjBlMzVmYmQwNjZmMg==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-29T13:14:35Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-29T13:14:35Z"
+      },
+      "message": "Fix mypy errors at even_tree algo (#4579)",
+      "tree": {
+        "sha": "c052a9ac21d1b54908a61f09af2c435c14b66b62",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/c052a9ac21d1b54908a61f09af2c435c14b66b62"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhAqm7CRBK7hj4Ov3rIwAAwwgIAD3tblTDnQW66cblsNU89Soi\nS5xM4/djEK8zYYQ4PgIBEtsPiYP9t+/mjNMSonN6NrtSyfctKcHDTItKosF3txgB\nNBkWX6mnSyNjs1Dfsr1vgCNUH2uCZMOb2L2FJuWy1jpwplGAv3/GYZ2XH9hOoXvh\nKozI9ksrNwmH2jOc/JY9UZltTE6hWYLInAiznBoC3SYi34ub1XbnmcFMGu8XQBu0\n4CIU/ulPNQbB6/CM4S+35ig3zxnQ6rvKYjtk/Z0a48ksTkl8PZdi7b5rPsUz4HD0\nKrlGGFVblYdGVoPlYabvtjcZAc21ph6Ac2p5ctu98YU9Mycx2WqlU0vr0ohhQT4=\n=xYI3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c052a9ac21d1b54908a61f09af2c435c14b66b62\nparent 40d85d54433eccff19b4434c7073f2a7b6127426\nauthor Hasanul Islam <hasanuli10@gmail.com> 1627564475 +0600\ncommitter GitHub <noreply@github.com> 1627564475 +0200\n\nFix mypy errors at even_tree algo (#4579)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a5bcf0f6749a93a44f7a981edc9b0e35fbd066f2/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "40d85d54433eccff19b4434c7073f2a7b6127426",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/40d85d54433eccff19b4434c7073f2a7b6127426",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/40d85d54433eccff19b4434c7073f2a7b6127426"
+      }
+    ]
+  },
+  {
+    "sha": "40d85d54433eccff19b4434c7073f2a7b6127426",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NDBkODVkNTQ0MzNlY2NmZjE5YjQ0MzRjNzA3M2YyYTdiNjEyNzQyNg==",
+    "commit": {
+      "author": {
+        "name": "Milton Chandro Bhowmick",
+        "email": "miltonbhowmick6@gmail.com",
+        "date": "2021-07-28T10:50:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-28T10:50:21Z"
+      },
+      "message": "Modified the a_star [dot] py for making readable (#4576)",
+      "tree": {
+        "sha": "d1dcdcb4d1c6a068694d41295a4f47e99623b553",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/d1dcdcb4d1c6a068694d41295a4f47e99623b553"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/40d85d54433eccff19b4434c7073f2a7b6127426",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhATZtCRBK7hj4Ov3rIwAAsyEIABJ25JSOzUs3L8FRHufUwfE+\nZcpZ9okpSvmQSX5Siz8NVHHKNqUaS/femZCoyPYj1/dFWE6IiXM42ZmQeTs0Iv6/\nIeEQ2ZiI8t7MqtNJn+5c2PB3Ci10/OZxd99NPwrA3F2iRwZcj2dPKX9jH0LEKkaH\n1xDnxvfX0p7B6FGjI4gkt/x613nw3gErKxzmHpvYzyRRHc+Itgem18hbtVtogJkb\n7kzuOtSgl0tBxZaINiJ2wdcXF0YOogqelvMBUHWy6mowu+ANa1bRxmHQ51GhkoU4\nPoWnvwGEBpEcu252hEKka8zFMFCtbmXGK/GqEm2ngWlOdf0hvRiDjP+aAJfU9NU=\n=A70x\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d1dcdcb4d1c6a068694d41295a4f47e99623b553\nparent a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c\nauthor Milton Chandro Bhowmick <miltonbhowmick6@gmail.com> 1627469421 +0600\ncommitter GitHub <noreply@github.com> 1627469421 +0200\n\nModified the a_star [dot] py for making readable (#4576)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/40d85d54433eccff19b4434c7073f2a7b6127426",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/40d85d54433eccff19b4434c7073f2a7b6127426",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/40d85d54433eccff19b4434c7073f2a7b6127426/comments",
+    "author": {
+      "login": "Miltonbhowmick",
+      "id": 16919385,
+      "node_id": "MDQ6VXNlcjE2OTE5Mzg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16919385?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Miltonbhowmick",
+      "html_url": "https://github.com/Miltonbhowmick",
+      "followers_url": "https://api.github.com/users/Miltonbhowmick/followers",
+      "following_url": "https://api.github.com/users/Miltonbhowmick/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Miltonbhowmick/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Miltonbhowmick/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Miltonbhowmick/subscriptions",
+      "organizations_url": "https://api.github.com/users/Miltonbhowmick/orgs",
+      "repos_url": "https://api.github.com/users/Miltonbhowmick/repos",
+      "events_url": "https://api.github.com/users/Miltonbhowmick/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Miltonbhowmick/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c"
+      }
+    ]
+  },
+  {
+    "sha": "a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6YTRiN2QxMjI2MmQ0MTk2OWNmMWZjOWQ1ZGJmOWI5YTAxZjE2NWY0Yw==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-27T11:21:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-27T11:21:00Z"
+      },
+      "message": "Fix mypy errors at greedy best first algo (#4575)",
+      "tree": {
+        "sha": "94d2dfc4ee682a2fdb69ae001d56b0627f595a3e",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/94d2dfc4ee682a2fdb69ae001d56b0627f595a3e"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg/+wcCRBK7hj4Ov3rIwAAtEkIAGmfEDDxL/A/XBq+oHOAkB5b\nGZg0y5pDCkTdTDlXRiT1/TzKyKmMK/2eFh13Q5kGUkb3pKWqhkaDuENI4CtTfSES\nOeo8H/lxDs+Zwjd7/lojgCfXReIKddzOefungLwdn8ad0lQCQEaQk0R7dUd2UKt9\nn/NtPEB8pb58WXtOhvAbsZUxnbZiZFvehUecxMAiw28H35X+1otghdeuuXOtkc2A\njaTV4MOko5YoHFyU4eZ4W13em9ZOMVkX50QEVVjZNB7RONlScKgdqwrw2TH+F09E\n0aZG6M1RVwChkagRie9IhEz/6NvwJFSzksVH35de0XEdYOw7ivZG2dm/MxC2tX8=\n=2tMW\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 94d2dfc4ee682a2fdb69ae001d56b0627f595a3e\nparent c5003a2c462c7c775992ad9a733c360126702dd4\nauthor Hasanul Islam <hasanuli10@gmail.com> 1627384860 +0600\ncommitter GitHub <noreply@github.com> 1627384860 +0200\n\nFix mypy errors at greedy best first algo (#4575)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/a4b7d12262d41969cf1fc9d5dbf9b9a01f165f4c/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c5003a2c462c7c775992ad9a733c360126702dd4",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/c5003a2c462c7c775992ad9a733c360126702dd4",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/c5003a2c462c7c775992ad9a733c360126702dd4"
+      }
+    ]
+  },
+  {
+    "sha": "c5003a2c462c7c775992ad9a733c360126702dd4",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6YzUwMDNhMmM0NjJjN2M3NzU5OTJhZDlhNzMzYzM2MDEyNjcwMmRkNA==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-27T08:09:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-27T08:09:17Z"
+      },
+      "message": "Fix mypy errors at bfs_shortest_path algo (#4572)",
+      "tree": {
+        "sha": "fadc5f2175cbbee5add5303b9ea52500ba4de3ae",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/fadc5f2175cbbee5add5303b9ea52500ba4de3ae"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/c5003a2c462c7c775992ad9a733c360126702dd4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg/78tCRBK7hj4Ov3rIwAAi98IABtba5YtMMDzn+rMcrZ71Ofz\navGYOV8iMhBwpBxAqGJMr8jJB3F7S0Pl2NsaL0Ga2C2shC24wiwtWW+Po85Pad9v\n/f/l2jv/hZB9O7pDpzupGOFXfdxMU7cU/4ShFwn1jynpG6MBs0uaJLw7QvNEHHsE\nLfJr2rSsvOTPjHV+TdcslUC6/FhvTCC2JWAcDaZJ53hTPBfkxZZ7TG5Q5QtZJTST\nx/My/Hs96XorsqRx8Jgp1cZye1BsDtCyVVN+1wU4WVRwMZhUJmvgk5cCLvqBen0r\nqNCa3xixtDcyoIOUnntR4Dd8S5FqxZJL7Ff+06F+SD8cqcgYnF24W9UBe5ruZtE=\n=Nrfc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fadc5f2175cbbee5add5303b9ea52500ba4de3ae\nparent 6732fa013119aa2003f24d1dac1bdc4ee435ee5e\nauthor Hasanul Islam <hasanuli10@gmail.com> 1627373357 +0600\ncommitter GitHub <noreply@github.com> 1627373357 +0200\n\nFix mypy errors at bfs_shortest_path algo (#4572)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/c5003a2c462c7c775992ad9a733c360126702dd4",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/c5003a2c462c7c775992ad9a733c360126702dd4",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/c5003a2c462c7c775992ad9a733c360126702dd4/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/6732fa013119aa2003f24d1dac1bdc4ee435ee5e"
+      }
+    ]
+  },
+  {
+    "sha": "6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NjczMmZhMDEzMTE5YWEyMDAzZjI0ZDFkYWMxYmRjNGVlNDM1ZWU1ZQ==",
+    "commit": {
+      "author": {
+        "name": "arfy slowy",
+        "email": "slowy.arfy@gmail.com",
+        "date": "2021-07-26T12:52:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-26T12:52:52Z"
+      },
+      "message": "[fixed] module 'numpy' is imported with both 'import' and 'import from' (#4544)\n\n* [fixed] module 'numy' is imported with both 'import' and 'import from'\r\n\r\n* remove commented",
+      "tree": {
+        "sha": "706c7b4af9d9b13c0c49a3432d3bf656d92f98ea",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/706c7b4af9d9b13c0c49a3432d3bf656d92f98ea"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg/rAkCRBK7hj4Ov3rIwAA1uoIAKoq08IqOL5HItdLkPhSCS8s\naDGB6rJYYCGP8ZzNKVcWMHXDL2d7G7B3Z5ZeZvAsRwwL2oqQFrfmT69l5FiSjNej\nwoj0vSRjOX4TGfVndo0cyB/zpCPSUdQdiTnOKINgt4oU8jxAxhhwZ22kzrmlRFt/\nyTty+ACndLUkH4mnkvv1z661ORE9QBMm3ABPAy9J7dc0UgA4eICUYoYuQdsq6roO\ncl1p+MnyIcK3QpSUSTqnuuPzIn9ZQ/mUx3V04UFxDPpc5Bs6+EkENIRi6Hm4RMAN\n8hg8d/xPC7Gb7mCPmzZkVsh2EZd2OgnwtRdI4CNhTpK8vgAPqBXUYIDK2u/A3sM=\n=PwxR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 706c7b4af9d9b13c0c49a3432d3bf656d92f98ea\nparent 7634cf0d60d15986456e35d82d3f3eb1c6a53c26\nauthor arfy slowy <slowy.arfy@gmail.com> 1627303972 +0700\ncommitter GitHub <noreply@github.com> 1627303972 +0200\n\n[fixed] module 'numpy' is imported with both 'import' and 'import from' (#4544)\n\n* [fixed] module 'numy' is imported with both 'import' and 'import from'\r\n\r\n* remove commented"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/6732fa013119aa2003f24d1dac1bdc4ee435ee5e",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/6732fa013119aa2003f24d1dac1bdc4ee435ee5e/comments",
+    "author": {
+      "login": "slowy07",
+      "id": 40540262,
+      "node_id": "MDQ6VXNlcjQwNTQwMjYy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40540262?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/slowy07",
+      "html_url": "https://github.com/slowy07",
+      "followers_url": "https://api.github.com/users/slowy07/followers",
+      "following_url": "https://api.github.com/users/slowy07/following{/other_user}",
+      "gists_url": "https://api.github.com/users/slowy07/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/slowy07/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/slowy07/subscriptions",
+      "organizations_url": "https://api.github.com/users/slowy07/orgs",
+      "repos_url": "https://api.github.com/users/slowy07/repos",
+      "events_url": "https://api.github.com/users/slowy07/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/slowy07/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/7634cf0d60d15986456e35d82d3f3eb1c6a53c26"
+      }
+    ]
+  },
+  {
+    "sha": "7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NzYzNGNmMGQ2MGQxNTk4NjQ1NmUzNWQ4MmQzZjNlYjFjNmE1M2MyNg==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-26T12:45:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-26T12:45:40Z"
+      },
+      "message": "Fix mypy errors at gale_shapely_bigraph (#4568)",
+      "tree": {
+        "sha": "6e563b3897240673cccc7a8209d86b0820bd150e",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/6e563b3897240673cccc7a8209d86b0820bd150e"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg/q50CRBK7hj4Ov3rIwAASrgIAB+OoFe9rSgbaRXkzkGlX3nP\nNMbDqvWK33awpyVpKMrfxX8B2oa+4bGmK0TgltV0gERlB16wFM07ACJBQQhRLhcW\ntewnZ/e0eo/n8FHfo5JPddzxMP/L9V7Oir7ctxeiYmJiTPK67dPMYkZogHg2/3fQ\nD7sViUoHEsuBBtQkBzH2DX5endKefiKFkcXldDmcqciFNzw2Eeywz8qe+h1zBqij\nSoqMqa304X1hNle2QJIYt8pvGlYl/r9QbUtU9o2As8paNbt+bJHHzkWnbjEEJi4T\nwg+p/VjvQs1NHSf2E9F7DmOm6A/O9Qzu7uRZnph5VHH33hNEGqueIZxcJqN7TX8=\n=8QQd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6e563b3897240673cccc7a8209d86b0820bd150e\nparent 407c97906393ddaea43e2c21174c6cdaeb57dcfa\nauthor Hasanul Islam <hasanuli10@gmail.com> 1627303540 +0600\ncommitter GitHub <noreply@github.com> 1627303540 +0200\n\nFix mypy errors at gale_shapely_bigraph (#4568)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/7634cf0d60d15986456e35d82d3f3eb1c6a53c26",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7634cf0d60d15986456e35d82d3f3eb1c6a53c26/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/407c97906393ddaea43e2c21174c6cdaeb57dcfa"
+      }
+    ]
+  },
+  {
+    "sha": "407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NDA3Yzk3OTA2MzkzZGRhZWE0M2UyYzIxMTc0YzZjZGFlYjU3ZGNmYQ==",
+    "commit": {
+      "author": {
+        "name": "Suyash Shrivastava",
+        "email": "65887107+suyash2796@users.noreply.github.com",
+        "date": "2021-07-21T06:01:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-21T06:01:55Z"
+      },
+      "message": "[Mypy fix] fix secant method (#4501)\n\n* case switch using python\r\n\r\n* review comments\r\n\r\n* added type hints\r\n\r\n* general code format\r\n\r\n* [mypy] Fix type annotations for secant_method.py\r\n\r\n* remove bad push",
+      "tree": {
+        "sha": "cfd8772b8e50b6e489dbedf61978e2d92ba11381",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/cfd8772b8e50b6e489dbedf61978e2d92ba11381"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg97hTCRBK7hj4Ov3rIwAAr+IIAINeXcoZ6irLtS8K8HPol2AN\nq+PLBDzE7aRXdFf4rR4BinmMUtjlGwIn65XzMOVTNNo8ikfysQfwRPm6nHH6knyz\nbCgbQmX2hleVUwmD6wL9Gu3auCyjXgaVNzuez7FnWxPa6qluc/8dV8m8j18xfgPu\n/t+QCZEnYPm53wq5ZDLz8PzyqaaRXJfra/m/dZCgTrM8oq0JQ1JEHRZX3ncFlfZ/\npy0cR8ZPMNnoHr9YWNEXRbx0hui8cuyBkmtuHq9xETgpYmGjTbOz4qxLryZhe0B4\niaPtpQqjaCFV0BoSe3grDTVBExN5kcgD8itMr50mzWifW18mk4Tr5LRXQrcftww=\n=Kqj9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cfd8772b8e50b6e489dbedf61978e2d92ba11381\nparent 7342b336587af1e57eb9888203a1ae80832bde28\nauthor Suyash Shrivastava <65887107+suyash2796@users.noreply.github.com> 1626847315 +0530\ncommitter GitHub <noreply@github.com> 1626847315 +0200\n\n[Mypy fix] fix secant method (#4501)\n\n* case switch using python\r\n\r\n* review comments\r\n\r\n* added type hints\r\n\r\n* general code format\r\n\r\n* [mypy] Fix type annotations for secant_method.py\r\n\r\n* remove bad push"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/407c97906393ddaea43e2c21174c6cdaeb57dcfa",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/407c97906393ddaea43e2c21174c6cdaeb57dcfa/comments",
+    "author": {
+      "login": "suyash2796",
+      "id": 65887107,
+      "node_id": "MDQ6VXNlcjY1ODg3MTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65887107?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/suyash2796",
+      "html_url": "https://github.com/suyash2796",
+      "followers_url": "https://api.github.com/users/suyash2796/followers",
+      "following_url": "https://api.github.com/users/suyash2796/following{/other_user}",
+      "gists_url": "https://api.github.com/users/suyash2796/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/suyash2796/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/suyash2796/subscriptions",
+      "organizations_url": "https://api.github.com/users/suyash2796/orgs",
+      "repos_url": "https://api.github.com/users/suyash2796/repos",
+      "events_url": "https://api.github.com/users/suyash2796/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/suyash2796/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7342b336587af1e57eb9888203a1ae80832bde28",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7342b336587af1e57eb9888203a1ae80832bde28",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/7342b336587af1e57eb9888203a1ae80832bde28"
+      }
+    ]
+  },
+  {
+    "sha": "7342b336587af1e57eb9888203a1ae80832bde28",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NzM0MmIzMzY1ODdhZjFlNTdlYjk4ODgyMDNhMWFlODA4MzJiZGUyOA==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-21T05:59:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-21T05:59:18Z"
+      },
+      "message": "Fix mypy erros at strongly connected component (#4558)",
+      "tree": {
+        "sha": "dd7290fd8350a03b8a00e7f6b5ac90eb0a250bf4",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/dd7290fd8350a03b8a00e7f6b5ac90eb0a250bf4"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/7342b336587af1e57eb9888203a1ae80832bde28",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg97e2CRBK7hj4Ov3rIwAA3GEIABQW6MdBvDuyT3b2gyd+Ehz5\njsUtVYIeRjjxtPZgSZSmANyvkg3U0zba6xWWMPZVMHS4wcB12vHCB+GlBz//YNZb\nBpvWUaAYdQm4vIj6FpYkDN8da5PKLrrhbj2B5+eHFt+a4/b4n/7IRmC5RsWCAbLE\nwJjzc18G9I1HdIQqMIW1M7ABvw+fgCbP1eIIV91ZsvvusiEnm+w91um0lJv+Q0ue\nc4EiXrw+5nWn3xfmyLNSethkYfDXRfA9kxzxCZE1GKk5BBJSXLIZnWkR3trn7fiR\nN56vjc/LlCyeVnw6uzGapuISaNbT5PAMFG4vfmL+A+mHcO86FqR0zSqhQ+DyNKc=\n=BNcH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dd7290fd8350a03b8a00e7f6b5ac90eb0a250bf4\nparent bc09ba9abfa220c893b23969a4b8de05f5ced1e1\nauthor Hasanul Islam <hasanuli10@gmail.com> 1626847158 +0600\ncommitter GitHub <noreply@github.com> 1626847158 +0200\n\nFix mypy erros at strongly connected component (#4558)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7342b336587af1e57eb9888203a1ae80832bde28",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/7342b336587af1e57eb9888203a1ae80832bde28",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7342b336587af1e57eb9888203a1ae80832bde28/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/bc09ba9abfa220c893b23969a4b8de05f5ced1e1"
+      }
+    ]
+  },
+  {
+    "sha": "bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6YmMwOWJhOWFiZmEyMjBjODkzYjIzOTY5YTRiOGRlMDVmNWNlZDFlMQ==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-20T11:24:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-20T11:24:27Z"
+      },
+      "message": "Fix mypy errors at graph_list (#4557)",
+      "tree": {
+        "sha": "e13d5e79274a599f28394280726e61154cf8591d",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/e13d5e79274a599f28394280726e61154cf8591d"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg9rJrCRBK7hj4Ov3rIwAA5egIAA7Dj8AqKcGaL9Xa4tLJrOQY\nd9hYdAUd4ppsug5j2wkhH2bft2Zo3qao121WXsYopICKPAPoKKRBmqngBdgaNAXR\nFrBC/qzjdJaaTQidWEilO96WsLUBSYlHmxBQjvHIOAUKFlGMiMcwiDyUh1mW6arn\nJibLwcLOlFfztyXaTIfJdubu/YyHlgv9MKtuN4f1/aTRnGkn4LeBfCGrOZY5/KDN\n0oZVZvUsDl/e7Pw7DiI0vcWs4GLgxnEov7cXE03B4m+0DAYpjiRT1MyjBVDXPN2B\nEtpomsL9jhjbLG7yp+WJwr/uAWjgh+N+1LXRAIGvbOxfd813Hr1IiTujMlhobH0=\n=RjCi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e13d5e79274a599f28394280726e61154cf8591d\nparent 4a2216b69a941b39ce279e475e383db44836df1d\nauthor Hasanul Islam <hasanuli10@gmail.com> 1626780267 +0600\ncommitter GitHub <noreply@github.com> 1626780267 +0200\n\nFix mypy errors at graph_list (#4557)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/bc09ba9abfa220c893b23969a4b8de05f5ced1e1",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/bc09ba9abfa220c893b23969a4b8de05f5ced1e1/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a2216b69a941b39ce279e475e383db44836df1d",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/4a2216b69a941b39ce279e475e383db44836df1d",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/4a2216b69a941b39ce279e475e383db44836df1d"
+      }
+    ]
+  },
+  {
+    "sha": "4a2216b69a941b39ce279e475e383db44836df1d",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NGEyMjE2YjY5YTk0MWIzOWNlMjc5ZTQ3NWUzODNkYjQ0ODM2ZGYxZA==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-20T07:36:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-20T07:36:14Z"
+      },
+      "message": "Fix mypy errors at bidirectional_a_star (#4556)",
+      "tree": {
+        "sha": "7d23afe739f77b413868586c3b4d0c0ba14a58c3",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/7d23afe739f77b413868586c3b4d0c0ba14a58c3"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/4a2216b69a941b39ce279e475e383db44836df1d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg9nzuCRBK7hj4Ov3rIwAAlBYIABW6mXTONAkzl5+sWE/8/KXC\nDQu0QcxR+ZQ67fbEylhkOVBpoMpX4uIgMjTXYUpv+Yahi7IEXal1+2kVGxNjP4jm\n8+j0Yt0kdw1lrMxHF/W/Vz7Hq1RCGDg6Y9ERQbbeAjC/o0t1KM3ufsbtw7IOii9v\nXnlaW1KyLxxrOJ+D2zvmGDmhhaDDI10xct9yZN6ZjXZGhGZHnc6TeVFOavhEOcjX\nCFSlMmCWhuyzNlr5c8R9SMZj5jQ5XByKRAZTAGnaQeiqSJmKhDMt/3s60fZi3kmc\ny3NmldnOvGLDCgL/+8X7VRWFhEPAGazXZF9PBQ85hpJrnuulyhmGeZ7zKPM2ano=\n=/ZNg\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7d23afe739f77b413868586c3b4d0c0ba14a58c3\nparent 72aa4cc315ca0a70e09026884556cb724145d12e\nauthor Hasanul Islam <hasanuli10@gmail.com> 1626766574 +0600\ncommitter GitHub <noreply@github.com> 1626766574 +0200\n\nFix mypy errors at bidirectional_a_star (#4556)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/4a2216b69a941b39ce279e475e383db44836df1d",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/4a2216b69a941b39ce279e475e383db44836df1d",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/4a2216b69a941b39ce279e475e383db44836df1d/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "72aa4cc315ca0a70e09026884556cb724145d12e",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/72aa4cc315ca0a70e09026884556cb724145d12e",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/72aa4cc315ca0a70e09026884556cb724145d12e"
+      }
+    ]
+  },
+  {
+    "sha": "72aa4cc315ca0a70e09026884556cb724145d12e",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NzJhYTRjYzMxNWNhMGE3MGUwOTAyNjg4NDU1NmNiNzI0MTQ1ZDEyZQ==",
+    "commit": {
+      "author": {
+        "name": "SURYAPRATAP SINGH SURYAVANSHI",
+        "email": "67123991+suryapratapsinghsuryavanshi@users.noreply.github.com",
+        "date": "2021-07-20T07:35:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-20T07:35:21Z"
+      },
+      "message": "add phone_validator method (#4552)\n\n* add phone_validator method\r\n\r\n* change the phone_validator to indian_phone_validator\r\n\r\n* Unnecessary comments removed\r\n\r\n* all comments deleted\r\n\r\n* Fixes: #{} new line issue\r\n\r\n* code reformatted using black",
+      "tree": {
+        "sha": "904e68dfb5f834acc7947156a557c2be38a8bd8c",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/904e68dfb5f834acc7947156a557c2be38a8bd8c"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/72aa4cc315ca0a70e09026884556cb724145d12e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg9ny5CRBK7hj4Ov3rIwAAe7wIACiG/ad+xfko3Y0QgsikrIIm\nUapHiCuYEjtxpezJVg4XwSjPn7kkk255eFnJU9K85YghCOwXuoaw2EFgkTxEiZ13\noTvMCsFBo06AH1MwaGc217LCCaKgPcIW0xTeyYC7929Sdib4/4Xz6JH3q8wFGOFI\nETpQ6qsVQo5F8cNPtCbP6UdMaegI6S+rhUyqdC4Z6Xo1p13YrL2WJJ2KBPDxuxkI\nCgoqleIZsh8vR8Eg4vULjne6fcDGWrtKpV3N5gvpRfmZytQslfqKdj2TPj6HAcTX\nceO/2HqXTs3Gx4x+Lq4P1k+DcNzqgw+IWC68QEm7gWQ+UsCtEkVXIxq2gz0qonA=\n=kMd2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 904e68dfb5f834acc7947156a557c2be38a8bd8c\nparent eca37b1537ce9df227e1c2a915b2841093b9c028\nauthor SURYAPRATAP SINGH SURYAVANSHI <67123991+suryapratapsinghsuryavanshi@users.noreply.github.com> 1626766521 +0530\ncommitter GitHub <noreply@github.com> 1626766521 +0200\n\nadd phone_validator method (#4552)\n\n* add phone_validator method\r\n\r\n* change the phone_validator to indian_phone_validator\r\n\r\n* Unnecessary comments removed\r\n\r\n* all comments deleted\r\n\r\n* Fixes: #{} new line issue\r\n\r\n* code reformatted using black"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/72aa4cc315ca0a70e09026884556cb724145d12e",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/72aa4cc315ca0a70e09026884556cb724145d12e",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/72aa4cc315ca0a70e09026884556cb724145d12e/comments",
+    "author": {
+      "login": "suryapratapsinghsuryavanshi",
+      "id": 67123991,
+      "node_id": "MDQ6VXNlcjY3MTIzOTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67123991?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/suryapratapsinghsuryavanshi",
+      "html_url": "https://github.com/suryapratapsinghsuryavanshi",
+      "followers_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/followers",
+      "following_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/subscriptions",
+      "organizations_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/orgs",
+      "repos_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/repos",
+      "events_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/suryapratapsinghsuryavanshi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eca37b1537ce9df227e1c2a915b2841093b9c028",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/eca37b1537ce9df227e1c2a915b2841093b9c028",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/eca37b1537ce9df227e1c2a915b2841093b9c028"
+      }
+    ]
+  },
+  {
+    "sha": "eca37b1537ce9df227e1c2a915b2841093b9c028",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6ZWNhMzdiMTUzN2NlOWRmMjI3ZTFjMmE5MTViMjg0MTA5M2I5YzAyOA==",
+    "commit": {
+      "author": {
+        "name": "Lucifer",
+        "email": "63491234+ashish-patwal@users.noreply.github.com",
+        "date": "2021-07-19T15:40:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-19T15:40:18Z"
+      },
+      "message": "Random anime character info (#4553)\n\n* fixed colons and spaces\r\n\r\n* fixed colons and spaces\r\n\r\n* random anime character python script\r\n\r\n* more tests passed\r\n\r\n* type hint updated\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>\r\n\r\n* type hint updated again\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>\r\n\r\n* Update random_anime_character.py\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>",
+      "tree": {
+        "sha": "401d4705c0e4cde44ccb5824d1025867a5813cb8",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/401d4705c0e4cde44ccb5824d1025867a5813cb8"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/eca37b1537ce9df227e1c2a915b2841093b9c028",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg9ZziCRBK7hj4Ov3rIwAAW3sIADhdBZ/UKuYB8ucpHxaLX5dN\nOk2Us/OaqOHT8ULDbbay8UcPtkdM5AeXRIiX866rWSnnvtyfl2g+wRauG+XaefnR\neZiL43aGpxnJ8oUYysH3wJQUJbkPKAf/lBaFJW/8sPT2JzVtzkbBT1YpziRssuNl\ngwTayeB8jIlv29ZdsfXgNrwBdkneMXYJfFpI/L90aRyR8KvRl1vum82WVun6qDaF\nLzHX2l2psXECM6bOvfZ11ZTTrDCl9v1lxmetnS5/9ZS0b/x9TorvJSfGyEWexAQv\nMPTtezsr38YX9Pv68c4wiSuSwbiybMeywOdNS5lGbPXaarjQToWr100H0/aZCSA=\n=y6sA\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 401d4705c0e4cde44ccb5824d1025867a5813cb8\nparent 7046fdcdc800badef84ee06f801386d62a3914e4\nauthor Lucifer <63491234+ashish-patwal@users.noreply.github.com> 1626709218 +0530\ncommitter GitHub <noreply@github.com> 1626709218 +0200\n\nRandom anime character info (#4553)\n\n* fixed colons and spaces\r\n\r\n* fixed colons and spaces\r\n\r\n* random anime character python script\r\n\r\n* more tests passed\r\n\r\n* type hint updated\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>\r\n\r\n* type hint updated again\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>\r\n\r\n* Update random_anime_character.py\r\n\r\nCo-authored-by: Christian Clauss <cclauss@me.com>"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/eca37b1537ce9df227e1c2a915b2841093b9c028",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/eca37b1537ce9df227e1c2a915b2841093b9c028",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/eca37b1537ce9df227e1c2a915b2841093b9c028/comments",
+    "author": {
+      "login": "ashish-patwal",
+      "id": 63491234,
+      "node_id": "MDQ6VXNlcjYzNDkxMjM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63491234?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashish-patwal",
+      "html_url": "https://github.com/ashish-patwal",
+      "followers_url": "https://api.github.com/users/ashish-patwal/followers",
+      "following_url": "https://api.github.com/users/ashish-patwal/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashish-patwal/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashish-patwal/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashish-patwal/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashish-patwal/orgs",
+      "repos_url": "https://api.github.com/users/ashish-patwal/repos",
+      "events_url": "https://api.github.com/users/ashish-patwal/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashish-patwal/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7046fdcdc800badef84ee06f801386d62a3914e4",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7046fdcdc800badef84ee06f801386d62a3914e4",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/7046fdcdc800badef84ee06f801386d62a3914e4"
+      }
+    ]
+  },
+  {
+    "sha": "7046fdcdc800badef84ee06f801386d62a3914e4",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6NzA0NmZkY2RjODAwYmFkZWY4NGVlMDZmODAxMzg2ZDYyYTM5MTRlNA==",
+    "commit": {
+      "author": {
+        "name": "bum_fuzzle",
+        "email": "72404701+bumfuzzle33@users.noreply.github.com",
+        "date": "2021-07-19T14:06:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-19T14:06:43Z"
+      },
+      "message": "fixed   #4529 (#4547)\n\nfixed an indentation mistake",
+      "tree": {
+        "sha": "9d30516e764a880749fa308d546bd73261b1c82b",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/9d30516e764a880749fa308d546bd73261b1c82b"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/7046fdcdc800badef84ee06f801386d62a3914e4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg9Yb0CRBK7hj4Ov3rIwAA0D4IAJNi964cJCDhcJJwD8fzpYCx\nxmBwFhNb4E8Z0OHxbKBKQN67smvghkdoHwpAhEXtiGplHS0wdLQA3A9mnhEnPo3D\nw2vX8edWWUfemjPJx2Hl8CqcKkI+L+Vip5cs4Os3j2mungNBdrtBAUTHKtrCEODK\nSaoptEtgGHQmcNhPhmBKa5oRsWM5EVYCbaOeJJvDGXNWoYpBIBnfn7yjJ7BE2gHq\nDBjXzzi13I+1rN/xWxIlbst+mlzONVT3vKa6ziywz2EAaVD4zouqq4F3D8xbDaux\nRIOr1lSOfGugc3v0rg/Z16ywKCPupw6YLNj8P5iWK/bUtF9IVX5iwpVQRmzZ6C4=\n=3Hkl\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9d30516e764a880749fa308d546bd73261b1c82b\nparent 2cbadc88ab1f3252364465c7660cdb96a377eace\nauthor bum_fuzzle <72404701+bumfuzzle33@users.noreply.github.com> 1626703603 +0530\ncommitter GitHub <noreply@github.com> 1626703603 +0200\n\nfixed   #4529 (#4547)\n\nfixed an indentation mistake"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7046fdcdc800badef84ee06f801386d62a3914e4",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/7046fdcdc800badef84ee06f801386d62a3914e4",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/7046fdcdc800badef84ee06f801386d62a3914e4/comments",
+    "author": {
+      "login": "bumfuzzle33",
+      "id": 72404701,
+      "node_id": "MDQ6VXNlcjcyNDA0NzAx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72404701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bumfuzzle33",
+      "html_url": "https://github.com/bumfuzzle33",
+      "followers_url": "https://api.github.com/users/bumfuzzle33/followers",
+      "following_url": "https://api.github.com/users/bumfuzzle33/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bumfuzzle33/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bumfuzzle33/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bumfuzzle33/subscriptions",
+      "organizations_url": "https://api.github.com/users/bumfuzzle33/orgs",
+      "repos_url": "https://api.github.com/users/bumfuzzle33/repos",
+      "events_url": "https://api.github.com/users/bumfuzzle33/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bumfuzzle33/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2cbadc88ab1f3252364465c7660cdb96a377eace",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/2cbadc88ab1f3252364465c7660cdb96a377eace",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/2cbadc88ab1f3252364465c7660cdb96a377eace"
+      }
+    ]
+  },
+  {
+    "sha": "2cbadc88ab1f3252364465c7660cdb96a377eace",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6MmNiYWRjODhhYjFmMzI1MjM2NDQ2NWM3NjYwY2RiOTZhMzc3ZWFjZQ==",
+    "commit": {
+      "author": {
+        "name": "dpittaluga76",
+        "email": "dpittaluga@gmail.com",
+        "date": "2021-07-12T06:16:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-12T06:16:31Z"
+      },
+      "message": "Improves readability and processing time (#4510)\n\n* Removes overuse of lambdas, improves readability and processing time when it finds bitstring to print out.\r\n\r\n Removes overuse of lambdas, uses dictionary instead.  This improves readability and processing time when it finds the bitstring to print out.\r\n\r\n* Update huffman.py",
+      "tree": {
+        "sha": "64ad2594e78cacef17746eeeee86aae0bac8d864",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/64ad2594e78cacef17746eeeee86aae0bac8d864"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/2cbadc88ab1f3252364465c7660cdb96a377eace",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg694/CRBK7hj4Ov3rIwAAFREIAH2rQ8oTr7nNKKD4anVaPskw\nTYjO/hJkTF0Rop366tge85QzY4ps8/vWZr7vu5DWP6N5pepjMtz89mQFPrP/+5eA\nvCtzAA5pHhODR3PUS0gOBD5iZTJ+th5XU8Dm603XsRjeqUiktr0jW0jo7BMH+wcI\nl8XYu6W5K8By6k8QQwTF47nSwIURoPl8YENUPEb0cSyvKxJuO3sQ2qq8mQx3yxSX\nfhHyyvnP9+3F3ojGuiTog8MU7yaFgLP7HWKaCtYfkG8fDJCY6CvAhLcXR73JeVJ/\nbX0McFAxLQVrQl5F/9ogMsp6HO5pcslH0xQ2JyPdMLp/bJc3bbW0U5rCkuNcHaM=\n=Lr5v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 64ad2594e78cacef17746eeeee86aae0bac8d864\nparent 307ffd8c29d1b2b156c349fde424e62e8493428a\nauthor dpittaluga76 <dpittaluga@gmail.com> 1626070591 -0300\ncommitter GitHub <noreply@github.com> 1626070591 +0200\n\nImproves readability and processing time (#4510)\n\n* Removes overuse of lambdas, improves readability and processing time when it finds bitstring to print out.\r\n\r\n Removes overuse of lambdas, uses dictionary instead.  This improves readability and processing time when it finds the bitstring to print out.\r\n\r\n* Update huffman.py"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/2cbadc88ab1f3252364465c7660cdb96a377eace",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/2cbadc88ab1f3252364465c7660cdb96a377eace",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/2cbadc88ab1f3252364465c7660cdb96a377eace/comments",
+    "author": {
+      "login": "dpittaluga76",
+      "id": 16124706,
+      "node_id": "MDQ6VXNlcjE2MTI0NzA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16124706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dpittaluga76",
+      "html_url": "https://github.com/dpittaluga76",
+      "followers_url": "https://api.github.com/users/dpittaluga76/followers",
+      "following_url": "https://api.github.com/users/dpittaluga76/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dpittaluga76/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dpittaluga76/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dpittaluga76/subscriptions",
+      "organizations_url": "https://api.github.com/users/dpittaluga76/orgs",
+      "repos_url": "https://api.github.com/users/dpittaluga76/repos",
+      "events_url": "https://api.github.com/users/dpittaluga76/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dpittaluga76/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "307ffd8c29d1b2b156c349fde424e62e8493428a",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/307ffd8c29d1b2b156c349fde424e62e8493428a",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/307ffd8c29d1b2b156c349fde424e62e8493428a"
+      }
+    ]
+  },
+  {
+    "sha": "307ffd8c29d1b2b156c349fde424e62e8493428a",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6MzA3ZmZkOGMyOWQxYjJiMTU2YzM0OWZkZTQyNGU2MmU4NDkzNDI4YQ==",
+    "commit": {
+      "author": {
+        "name": "Hasanul Islam",
+        "email": "hasanuli10@gmail.com",
+        "date": "2021-07-12T06:10:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-12T06:10:07Z"
+      },
+      "message": "Fix mypy errors at bidirectional_bfs (#4531)",
+      "tree": {
+        "sha": "533ba41acc083c520ab283a3297d3662e836e21f",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/533ba41acc083c520ab283a3297d3662e836e21f"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/307ffd8c29d1b2b156c349fde424e62e8493428a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg69y/CRBK7hj4Ov3rIwAAQt8IAAPPBYq6AKcoz+5iowwa6/ji\nwSF9XJ1W0B2OwomGP4EMMz2jwlJZwHJXdkTRXw0lF0cz0Eiwm8SolejNA1Vujx8I\nCyJtLDqGtE67iZb+TIjvPm6JlKd0AwyTkw1SBgXG4NRZ4qvNL1sjoQXQG1aBVT2f\n24KIs7BEFd2pVKLO0m1uLFZjlv7OYAWRbD4LCiLncUvkILZNC5gSHyptAt7Wz3Vr\nDTb2mi0CbJEhWTfo272NddYEX8qIJZD38rX/gD1XCmSGW21I7HF8w2jvuS9Qugvv\ni2XD1lzbc7Fy/HFgDiFQ5PYsL2bOk53LUEFnVEKjqsd3Xvcc17OO5kMk0KKHBII=\n=lmT4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 533ba41acc083c520ab283a3297d3662e836e21f\nparent 8c13a7786f4fe15af4d133fed14e5e2fb0888926\nauthor Hasanul Islam <hasanuli10@gmail.com> 1626070207 +0600\ncommitter GitHub <noreply@github.com> 1626070207 +0200\n\nFix mypy errors at bidirectional_bfs (#4531)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/307ffd8c29d1b2b156c349fde424e62e8493428a",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/307ffd8c29d1b2b156c349fde424e62e8493428a",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/307ffd8c29d1b2b156c349fde424e62e8493428a/comments",
+    "author": {
+      "login": "mhihasan",
+      "id": 19620907,
+      "node_id": "MDQ6VXNlcjE5NjIwOTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19620907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mhihasan",
+      "html_url": "https://github.com/mhihasan",
+      "followers_url": "https://api.github.com/users/mhihasan/followers",
+      "following_url": "https://api.github.com/users/mhihasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mhihasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mhihasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mhihasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/mhihasan/orgs",
+      "repos_url": "https://api.github.com/users/mhihasan/repos",
+      "events_url": "https://api.github.com/users/mhihasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mhihasan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/8c13a7786f4fe15af4d133fed14e5e2fb0888926"
+      }
+    ]
+  },
+  {
+    "sha": "8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+    "node_id": "MDY6Q29tbWl0NjM0NzYzMzc6OGMxM2E3Nzg2ZjRmZTE1YWY0ZDEzM2ZlZDE0ZTVlMmZiMDg4ODkyNg==",
+    "commit": {
+      "author": {
+        "name": "fpringle",
+        "email": "freddyjepringle@gmail.com",
+        "date": "2021-07-08T08:35:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-07-08T08:35:10Z"
+      },
+      "message": "feat: add solution for Project Euler problem 144 (#4280)\n\n* Added solution for Project Euler problem 144\r\n\r\n* updating DIRECTORY.md\r\n\r\n* Better variable names\r\n\r\n* updating DIRECTORY.md\r\n\r\nCo-authored-by: github-actions <${GITHUB_ACTOR}@users.noreply.github.com>",
+      "tree": {
+        "sha": "139fbf335c3fe355b4442b4bc10ad3b42e4ea670",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/git/trees/139fbf335c3fe355b4442b4bc10ad3b42e4ea670"
+      },
+      "url": "https://api.github.com/repos/TheAlgorithms/Python/git/commits/8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg5ri+CRBK7hj4Ov3rIwAA3XoIAJT42OQt6zhhfWj/eHR88Ay1\nOFam9LCGIlju6n93gFHe/GKCkMK9rE1icOQzxM6BA8rmzUqP2Nhe+NVtQDSjuiZT\nMLXo60hKqwH0kx5/tYJf2qVbSIa5vc7pvjfTFPvbIpFdnDDGT1TolLQF9G9nZpG9\newngwHL81273DU0LDUs0guAYqk6L2rLABgdergWtWpwbqijA375Prp5qhYZl7KKW\nqVAu3ZY5Cdlo7lYgkxmWXkT7YivKkWAM26HkSxEvwOjVNwbYejT+WRDtFsPBu3tn\naPBWcSArVSFOtCwr/E3/56TSNKzOtFnKXtevHaGg8YwhQopvWhJ4VN3Bbqnio3w=\n=rCqI\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 139fbf335c3fe355b4442b4bc10ad3b42e4ea670\nparent 256c319ce231eb0a158ec3506e2236d48ca4d6a5\nauthor fpringle <freddyjepringle@gmail.com> 1625733310 +0200\ncommitter GitHub <noreply@github.com> 1625733310 +0530\n\nfeat: add solution for Project Euler problem 144 (#4280)\n\n* Added solution for Project Euler problem 144\r\n\r\n* updating DIRECTORY.md\r\n\r\n* Better variable names\r\n\r\n* updating DIRECTORY.md\r\n\r\nCo-authored-by: github-actions <${GITHUB_ACTOR}@users.noreply.github.com>"
+      }
+    },
+    "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+    "html_url": "https://github.com/TheAlgorithms/Python/commit/8c13a7786f4fe15af4d133fed14e5e2fb0888926",
+    "comments_url": "https://api.github.com/repos/TheAlgorithms/Python/commits/8c13a7786f4fe15af4d133fed14e5e2fb0888926/comments",
+    "author": {
+      "login": "fpringle",
+      "id": 29929587,
+      "node_id": "MDQ6VXNlcjI5OTI5NTg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29929587?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fpringle",
+      "html_url": "https://github.com/fpringle",
+      "followers_url": "https://api.github.com/users/fpringle/followers",
+      "following_url": "https://api.github.com/users/fpringle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fpringle/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fpringle/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fpringle/subscriptions",
+      "organizations_url": "https://api.github.com/users/fpringle/orgs",
+      "repos_url": "https://api.github.com/users/fpringle/repos",
+      "events_url": "https://api.github.com/users/fpringle/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fpringle/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "256c319ce231eb0a158ec3506e2236d48ca4d6a5",
+        "url": "https://api.github.com/repos/TheAlgorithms/Python/commits/256c319ce231eb0a158ec3506e2236d48ca4d6a5",
+        "html_url": "https://github.com/TheAlgorithms/Python/commit/256c319ce231eb0a158ec3506e2236d48ca4d6a5"
+      }
+    ]
+  }
+]
