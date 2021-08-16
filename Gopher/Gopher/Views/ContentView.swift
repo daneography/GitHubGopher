@@ -27,11 +27,11 @@ struct ContentView: View {
                         .font(.body)
                         .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                 }
-            }
-        }.onAppear(){
+            }.onAppear(){
             apiCall().getGitHubCommits{ (commits) in
                 self.commits = commits
             }
+        }.navigationTitle("Commits")
         }
     }
 }

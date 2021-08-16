@@ -6,17 +6,16 @@
 //
 
 import SwiftUI
-
+//
 //struct CommitList: View{
 //    var body: some View{
-//        NavigationView {
-//            List(repository){ Repo in
-//                NavigationLink(destination: CommitDetails(commit: Repo)){
-//                    CommitRow(commit: Repo)
-//                }
-//            }.navigationTitle("Commits")
-//        }
+//        VStack(alignment: .leading){
+//            CommitRow()
+//        }.onAppear(){
+//            apiCall().getGitHubCommits{ (commits) in
+//                self.commits = commits
 //    }
+//    
 //}
 //
 //
