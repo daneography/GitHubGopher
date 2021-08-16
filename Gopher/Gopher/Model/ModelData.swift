@@ -7,6 +7,26 @@
 
 import Foundation
 
+//class apiCall {
+//     func getGitHubCommits(completion:@escaping ([Repo]) -> ()) {
+//         guard let url = URL(string:"https://api.github.com/repos/apple/swift/commits?per_page=25") else {
+//             return
+//         }
+//
+//         URLSession.shared.dataTask(with: url) {
+//             (data, _, _) in
+//             let repository = try! JSONDecoder().decode([Repo].self, from: data!)
+//             print(repository)
+//
+//             DispatchQueue.main.async {
+//                 completion(repository)
+//             }
+//         }
+//         .resume()
+//     }
+// }
+
+//// FOR LOCALLY SOURCE FILE
 var repository: [Repo] = load("commitsSample.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
