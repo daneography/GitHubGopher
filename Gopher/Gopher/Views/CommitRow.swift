@@ -12,13 +12,15 @@ struct CommitRow: View{
     
     var body: some View {
         VStack(alignment: .leading){
-            Text(commit.commit.author.name)
-                .font(.title)
             Text(commit.sha)
+                .fontWeight(.heavy)
+                .font(.title2)
+                .lineLimit(1)
+            Text("By \(commit.commit.author.name)")
                 .font(.subheadline)
             Text(commit.commit.message)
                 .font(.body)
-            Spacer()
+                .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
         }
     }
 }
@@ -29,6 +31,5 @@ struct CommitRow_Previews: PreviewProvider{
             CommitRow(commit: repository[0])
             CommitRow(commit: repository[1])
         }
-        .previewLayout(.fixed(width: 300, height: 500))
     }
 }

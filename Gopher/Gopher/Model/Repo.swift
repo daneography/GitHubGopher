@@ -12,7 +12,7 @@ import Foundation
 // Identifiable isu sed to help us make a unique identifier for our Commit object so the app can keep track of it
 
 struct Repo: Codable, Identifiable {
-    let id =  UUID()
+    let id = UUID()
     var sha: String
     var commit: Commit
 }

@@ -14,12 +14,13 @@ struct CommitDetails: View {
         VStack(alignment: .leading){
             Text(commit.sha)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            Text(commit.commit.author.name)
-                .font(.subheadline)
+            Text("By \(commit.commit.author.name)")
+                .font(.headline)
+            Divider()
             Text(commit.commit.message)
                 .font(.body)
-            
-        }
+            Spacer()
+        }.padding()
     }
 }
 
