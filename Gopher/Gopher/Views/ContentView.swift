@@ -16,6 +16,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List(commits) { commit in
+//                NavigationLink(destination: CommitDetails(commits: commit)){
                 VStack(alignment: .leading){
                     Text(commit.sha)
                         .fontWeight(.heavy)
@@ -27,6 +28,7 @@ struct ContentView: View {
                         .font(.body)
                         .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                 }
+//                }
             }.onAppear(){
             apiCall().getGitHubCommits{ (commits) in
                 self.commits = commits
