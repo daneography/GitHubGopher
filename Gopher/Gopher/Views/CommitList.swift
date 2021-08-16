@@ -9,8 +9,12 @@ import SwiftUI
 
 struct CommitList: View{
     var body: some View{
-        List(repository){ Repo in
-            CommitRow(commit: Repo)
+        NavigationView {
+            List(repository){ Repo in
+                NavigationLink(destination: CommitDetails()){
+                    CommitRow(commit: Repo)
+                }
+            }.navigationTitle("Commits")
         }
     }
 }

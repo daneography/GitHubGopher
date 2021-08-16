@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC13799D26C9DE1C00305750 /* commitsSample.json in Resources */ = {isa = PBXBuildFile; fileRef = AC13799C26C9DE1C00305750 /* commitsSample.json */; };
 		AC1379A026C9EA1300305750 /* CommitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13799F26C9EA1300305750 /* CommitList.swift */; };
+		AC1379A226C9ED3300305750 /* CommitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1379A126C9ED3300305750 /* CommitDetails.swift */; };
 		AC5BB18D26C9903F002840DB /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18C26C9903F002840DB /* Repo.swift */; };
 		AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB18E26C9919A002840DB /* CommitRow.swift */; };
 		AC5BB19126C993D5002840DB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BB19026C993D5002840DB /* ModelData.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		AC13799C26C9DE1C00305750 /* commitsSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = commitsSample.json; sourceTree = "<group>"; };
 		AC13799F26C9EA1300305750 /* CommitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitList.swift; sourceTree = "<group>"; };
+		AC1379A126C9ED3300305750 /* CommitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDetails.swift; sourceTree = "<group>"; };
 		AC5BB18C26C9903F002840DB /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		AC5BB18E26C9919A002840DB /* CommitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitRow.swift; sourceTree = "<group>"; };
 		AC5BB19026C993D5002840DB /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				AC805FD326C624FC0018E2A6 /* ContentView.swift */,
 				AC5BB18E26C9919A002840DB /* CommitRow.swift */,
 				AC13799F26C9EA1300305750 /* CommitList.swift */,
+				AC1379A126C9ED3300305750 /* CommitDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				AC5BB19126C993D5002840DB /* ModelData.swift in Sources */,
 				AC805FD226C624FC0018E2A6 /* GopherApp.swift in Sources */,
 				AC5BB18F26C9919A002840DB /* CommitRow.swift in Sources */,
+				AC1379A226C9ED3300305750 /* CommitDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

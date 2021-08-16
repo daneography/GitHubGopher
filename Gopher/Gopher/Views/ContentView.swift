@@ -13,18 +13,7 @@ struct ContentView: View {
 
     
     var body: some View {
-        Text("Hello World")
-//        List(commits) { commit in
-//            VStack(alignment: .leading) {
-//                Text(commit.commit.author.name)
-//                Text(commit.sha)
-//                Text(commit.commit.message)
-//            }
-//        }.onAppear(){
-//            apiCall().getGitHubCommits{ (commits) in
-//                self.commits = commits
-//            }
-//        }.navigationTitle("Commits")
+        CommitList()
     }
 }
 
